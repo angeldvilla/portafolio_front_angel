@@ -1,13 +1,15 @@
-import './App.css'
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
 
-function App() {
-  return(
-    <div>
-      <h1>BIENVENIDOS!! SOY ANGEL VILLA</h1>
-      <h3>FULL STACK WEB DEVELOPER</h3>
+/* components */
+import Home from "./views/Home/home";
 
-    </div>
-  )
-}
+const App = () => {
+  return (
+      <Routes>
+        <Route path="/" element={<Home/> } />
+      </Routes>
+  );
+};
 
-export default App
+export default App;
