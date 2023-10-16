@@ -34,6 +34,7 @@ function ResponsiveAppBar() {
           <NavLink to="/">
             <Avatar
               alt="Logo Avatar"
+              className="animate-jump animate-ease-linear"
               src={advl}
               style={{ width: "75px", height: "auto", marginRight: "12px" }}
             />

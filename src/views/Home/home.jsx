@@ -1,8 +1,9 @@
 import Atropos from "atropos/react";
 import NavBar from "../../components/NavBar/navBar";
+import Projects from "../Projects/projects";
 import miFoto from "../../assets/images/yo.jpg";
 
-const home = () => {
+const Home = () => {
   return (
     <>
       <div
@@ -27,8 +28,9 @@ const home = () => {
           alt="Mi Logo"
         />
       </Atropos>
+      <Projects />
     </>
   );
 };
 
-export default home;
+export default Home;
