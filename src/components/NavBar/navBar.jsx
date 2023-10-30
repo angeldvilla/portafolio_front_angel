@@ -1,4 +1,5 @@
-import * as React from "react";
+import { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -17,7 +18,8 @@ import DarkMode from "../DarkMode/darkMode";
 const pages = ["Sobre Mi", "Proyectos", "Habilidades", "Contacto"];
 
 function ResponsiveAppBar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = useState(null);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -27,8 +29,30 @@ function ResponsiveAppBar() {
     setAnchorElNav(null);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <AppBar position="static" style={{ backgroundColor: "red" }}>
+    <AppBar
+      position="fixed"
+      style={{
+        backgroundColor: isScrolled ? "red" : "transparent",
+        transition: "background-color 0.3s",
+      }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <NavLink to="/">
@@ -87,9 +111,18 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
+                <Link
+                  key={page}
+                  to={page.toLowerCase()}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  <MenuItem key={page} onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">{page}</Typography>
+                  </MenuItem>
+                </Link>
               ))}
             </Menu>
           </Box>
@@ -114,13 +147,22 @@ function ResponsiveAppBar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <Button
+              <Link
                 key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                to={page.toLowerCase()}
+                spy={true}
+                smooth={true}
+                offset={-70} 
+                duration={500}
               >
-                {page}
-              </Button>
+                <Button
+                  key={page}
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: "white", display: "block" }}
+                >
+                  {page}
+                </Button>
+              </Link>
             ))}
           </Box>
 

@@ -7,6 +7,10 @@ import Typography from "@mui/material/Typography";
 import advl from "../../assets/images/miLogo.png";
 
 export default function Cards(projects) {
+  console.log(projects.projects);
+  const handleView = () => {
+    window.open(projects.projects.repositorio);
+  };
   return (
     <Card sx={{ maxWidth: 545, margin: "auto" }}>
       <CardMedia
@@ -30,7 +34,9 @@ export default function Cards(projects) {
         }}
       >
         <Button size="small">Ver Proyecto</Button>
-        <Button size="small">Ver Repositorio</Button>
+        <Button size="small" onClick={handleView}>
+          Ver Repositorio
+        </Button>
       </CardActions>
     </Card>
   );
