@@ -7,7 +7,6 @@ import Typography from "@mui/material/Typography";
 import advl from "../../assets/images/miLogo.png";
 
 export default function Cards(projects) {
-  console.log(projects.projects);
   const handleView = () => {
     window.open(projects.projects.repositorio);
   };

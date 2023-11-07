@@ -1,6 +1,7 @@
 import Atropos from "atropos/react";
 import NavBar from "../../components/NavBar/navBar";
 import Projects from "../Projects/projects";
+import Skills from "../Skills/skills";
 import miFoto from "../../assets/images/yo.jpg";
 
 const Home = () => {
@@ -32,6 +33,9 @@ const Home = () => {
       </div>
       <div id="proyectos">
         <Projects />
+      </div>
+      <div id="habilidades">
+        <Skills />
       </div>
     </>
   );
