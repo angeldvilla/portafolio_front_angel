@@ -1,0 +1,66 @@
+/* buttons.module.css */
+.button {
+  display: inline-block;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button img {
+    width: 35px;
+    height: 35px;
+    filter: invert(1);
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+/* ---------------------------------------------------- */
+
+.buttonsNav {
+  z-index: 1;
+  position: relative;
+  background-color: rgb(10, 10, 10);
+  border-radius: 8px;
+  border: none;
+}
+
+.buttonsNav:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: #141518f4;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.buttonsNav:hover {
+  color: white;
+  transform: scale(1.05);
+  transition: 0.8s;
+}
+
+.buttonsNav:hover:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+.buttonsNav:active {
+  top: 2px;
+}

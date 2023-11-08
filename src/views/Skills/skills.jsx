@@ -1,38 +1,31 @@
-import { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { getSkills } from "../../redux/actions/actions";
+import SliderComponent from "../../components/Slider/slider";
 
 const Skills = () => {
-  const dispatch = useDispatch();
-  const skills = useSelector((state) => state?.skills);
-
-  useEffect(() => {
-    dispatch(getSkills());
-  }, [dispatch]);
-
   return (
-    <div>
-      <div>
-        <h1>Habilidades Blandas</h1>
-        {skills.soft.map((sf) => (
-          <div key={sf.id}>
-            <h2>{sf.title}</h2>
-            <p>{sf.description}</p>
-          </div>
-        ))}
+    <>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          marginTop: "20em",
+          marginBottom: "2.5em",
+        }}
+      >
+        <h1>Mis Habilidades</h1>
       </div>
-
-      <hr />
-
-      <div>
-        <h1>Habilidades Tecnicas</h1>
-        {skills.tech.map((th) => (
-          <div key={th.id}>
-            <h2>{th.title}</h2>
-          </div>
-        ))}
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          marginTop: "0.2em",
+          marginBottom: "12em",
+        }}
+      >
+        <SliderComponent />
       </div>
-    </div>
+    </>
   );
 };
 

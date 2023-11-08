@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import { NavLink } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -14,8 +13,14 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import advl from "../../assets/images/miLogo.png";
 import DarkMode from "../DarkMode/darkMode";
+import {
+  ButtonGitHub,
+  ButtonInstagram,
+  ButtonLinkedIn,
+} from "../Buttons/buttons";
+import styles from "../Buttons/buttons.module.css";
 
-const pages = ["Sobre Mi", "Proyectos", "Habilidades", "Contacto"];
+const pages = ["Sobre Mi", "Habilidades", "Proyectos", "Contacto"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -49,38 +54,39 @@ function ResponsiveAppBar() {
     <AppBar
       position="fixed"
       style={{
-        backgroundColor: isScrolled ? "red" : "transparent",
+        backgroundColor: isScrolled ? "#2b2b2bf4" : "#b50c00",
         transition: "background-color 0.3s",
       }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <NavLink to="/">
+          <a href="/">
             <Avatar
               alt="Logo Avatar"
               className="animate-jump animate-ease-linear"
               src={advl}
               style={{ width: "75px", height: "auto", marginRight: "12px" }}
             />
-          </NavLink>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            /* href="#app-bar-with-responsive-menu" */
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            ANGEL DAVID VILLA
-          </Typography>
-
+          </a>
+          <a href="/" style={{ textDecoration: "none", color: "inherit" }}>
+            <Typography
+              variant="h6"
+              noWrap
+              component="a"
+              /* href="#app-bar-with-responsive-menu" */
+              sx={{
+                mr: 2,
+                display: { xs: "none", md: "flex" },
+                fontFamily: "monospace",
+                fontWeight: 700,
+                letterSpacing: ".3rem",
+                color: "inherit",
+                textDecoration: "none",
+              }}
+            >
+              ANGEL DAVID VILLA
+            </Typography>
+          </a>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -120,7 +126,20 @@ function ResponsiveAppBar() {
                   duration={500}
                 >
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
+                    <Button
+                      key={page}
+                      onClick={handleCloseNavMenu}
+                      sx={{
+                        my: 2,
+                        color: "white",
+                        display: "block",
+                        gap: "10px",
+                        backgroundColor: "gray",
+                      }}
+                      className={styles.buttonsNav}
+                    >
+                      {page}
+                    </Button>
                   </MenuItem>
                 </Link>
               ))}
@@ -159,6 +178,7 @@ function ResponsiveAppBar() {
                   key={page}
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: "white", display: "block" }}
+                  className={styles.buttonsNav}
                 >
                   {page}
                 </Button>
@@ -166,7 +186,10 @@ function ResponsiveAppBar() {
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
+          <ButtonGitHub />
+          <ButtonLinkedIn />
+          <ButtonInstagram />
+          <Box sx={{ flexGrow: 0, marginLeft: "10px" }}>
             <DarkMode />
           </Box>
         </Toolbar>
