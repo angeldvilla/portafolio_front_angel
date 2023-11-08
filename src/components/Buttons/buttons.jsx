@@ -34,7 +34,7 @@ export const ButtonLinkedIn = () => (
 );
 
 export const ButtonInstagram = () => (
-  <Tooltip title="Linkedin" style={{ backgroundColor: "#a100a1" }}>
+  <Tooltip title="Instagram" style={{ backgroundColor: "#a100a1" }}>
     <a
       href="https://www.instagram.com/_angeldvilla_/"
       target="_blank"
