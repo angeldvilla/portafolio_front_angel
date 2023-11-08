@@ -1,0 +1,35 @@
+/* Estilos para el contenido principal */
+.content {
+  margin-left: 250px; /* Ancho de la barra lateral */
+  padding: 1px;
+}
+
+/* Estilos para la barra lateral */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px; /* Ancho de la barra lateral */
+  height: 100%;
+  background-color: #333; /* Color de fondo de la barra lateral */
+  color: #fff; /* Color del texto en la barra lateral */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff; /* Color de los enlaces en la barra lateral */
+}

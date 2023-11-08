@@ -20,7 +20,7 @@ import {
 } from "../Buttons/buttons";
 import styles from "../Buttons/buttons.module.css";
 
-const pages = ["Sobre Mi", "Habilidades", "Proyectos", "Contacto"];
+const pages = ["Sobre Mi", "Proyectos", "Contacto"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = useState(null);

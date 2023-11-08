@@ -2,7 +2,7 @@ import styles from "./buttons.module.css";
 import Tooltip from "@mui/material/Tooltip";
 
 export const ButtonGitHub = () => (
-  <Tooltip title="GitHub" style={{ backgroundColor: "#000000d6" }}>
+  <Tooltip title="GitHub" style={{ backgroundColor: "#969696d3" }}>
     <a
       href="https://github.com/angeldvilla"
       target="_blank"
