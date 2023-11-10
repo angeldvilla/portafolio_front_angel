@@ -13,14 +13,9 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import advl from "../../assets/images/miLogo.png";
 import DarkMode from "../DarkMode/darkMode";
-import {
-  ButtonGitHub,
-  ButtonInstagram,
-  ButtonLinkedIn,
-} from "../Buttons/buttons";
 import styles from "../Buttons/buttons.module.css";
 
-const pages = ["Sobre Mi", "Proyectos", "Contacto"];
+const pages = ["Inicio", "Sobre Mi", "Proyectos", "Contacto"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -54,7 +49,7 @@ function ResponsiveAppBar() {
     <AppBar
       position="fixed"
       style={{
-        backgroundColor: isScrolled ? "#2b2b2bf4" : "#b50c00",
+        backgroundColor: isScrolled ? "#2b2b2bf4" : "#860900",
         transition: "background-color 0.3s",
       }}
     >
@@ -73,7 +68,6 @@ function ResponsiveAppBar() {
               variant="h6"
               noWrap
               component="a"
-              /* href="#app-bar-with-responsive-menu" */
               sx={{
                 mr: 2,
                 display: { xs: "none", md: "flex" },
@@ -116,6 +110,24 @@ function ResponsiveAppBar() {
                 display: { xs: "block", md: "none" },
               }}
             >
+              <Typography
+                variant="h5"
+                noWrap
+                component="a"
+                sx={{
+                  mr: 2,
+                  ml: 2,
+                  display: { xs: "flex", md: "none" },
+                  flexGrow: 1,
+                  fontFamily: "monospace",
+                  fontWeight: 700,
+                  letterSpacing: ".2rem",
+                  color: "inherit",
+                  textDecoration: "none",
+                }}
+              >
+                ANGEL DAVID VILLA
+              </Typography>
               {pages.map((page) => (
                 <Link
                   key={page}
@@ -125,18 +137,26 @@ function ResponsiveAppBar() {
                   offset={-70}
                   duration={500}
                 >
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <MenuItem
+                    key={page}
+                    onClick={handleCloseNavMenu}
+                    sx={{
+                      flexGrow: 1,
+                      display: "flex",
+                      justifyContent: "center",
+                    }}
+                  >
                     <Button
                       key={page}
                       onClick={handleCloseNavMenu}
                       sx={{
                         my: 2,
                         color: "white",
-                        display: "block",
-                        gap: "10px",
+                        display: "flex",
+                        justifyContent: "center",
                         backgroundColor: "gray",
                       }}
-                      className={styles.buttonsNav}
+                      className={styles.viewMore}
                     >
                       {page}
                     </Button>
@@ -146,11 +166,10 @@ function ResponsiveAppBar() {
             </Menu>
           </Box>
           {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
-          <Typography
+          {/*   <Typography
             variant="h5"
             noWrap
             component="a"
-            /* href="#app-bar-with-responsive-menu" */
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },
@@ -163,8 +182,14 @@ function ResponsiveAppBar() {
             }}
           >
             ANGEL DAVID VILLA
-          </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          </Typography> */}
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+              justifyContent: "end",
+            }}
+          >
             {pages.map((page) => (
               <Link
                 key={page}
@@ -177,7 +202,7 @@ function ResponsiveAppBar() {
                 <Button
                   key={page}
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "white", display: "block" }}
+                  sx={{ my: 2, color: "white", display: "flex" }}
                   className={styles.buttonsNav}
                 >
                   {page}
@@ -186,9 +211,6 @@ function ResponsiveAppBar() {
             ))}
           </Box>
 
-          <ButtonGitHub />
-          <ButtonLinkedIn />
-          <ButtonInstagram />
           <Box sx={{ flexGrow: 0, marginLeft: "10px" }}>
             <DarkMode />
           </Box>

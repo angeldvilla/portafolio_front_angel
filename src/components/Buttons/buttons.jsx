@@ -1,50 +1,73 @@
 import styles from "./buttons.module.css";
 import Tooltip from "@mui/material/Tooltip";
+import { IconButton } from "@mui/material";
+import Email from "@mui/icons-material/Email";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
+
+export const ButtonEmail = () => {
+  const handleEmailClick = () => {
+    window.open(
+      "https://mail.google.com/mail/?view=cm&fs=1&to=escarlata.2003@gmail.com"
+    );
+  };
+
+  return (
+    <Tooltip
+      title="Correo"
+      style={{
+        backgroundColor: "#e8b11ac0",
+        /* linear-gradient(90deg, #1a73e8c0, #ff0000a0, #f0d8009d, #2f940090b7) */
+      }}
+    >
+      <IconButton
+        onClick={handleEmailClick}
+        target="_blank"
+        color="inherit"
+        className={styles.button}
+      >
+        <Email />
+      </IconButton>
+    </Tooltip>
+  );
+};
 
 export const ButtonGitHub = () => (
   <Tooltip title="GitHub" style={{ backgroundColor: "#969696d3" }}>
-    <a
+    <IconButton
       href="https://github.com/angeldvilla"
       target="_blank"
-      rel="noopener noreferrer"
+      color="inherit"
       className={styles.button}
     >
-      <img
-        src="https://img.icons8.com/?size=512&id=3tC9EQumUAuq&format=png"
-        alt="GitHub"
-      />
-    </a>
+      <GitHubIcon />
+    </IconButton>
   </Tooltip>
 );
 
 export const ButtonLinkedIn = () => (
   <Tooltip title="Linkedin" style={{ backgroundColor: "#0e76a8" }}>
-    <a
+    <IconButton
       href="https://www.linkedin.com/in/angel-david-villa-luj%C3%A1n-396634255/"
       target="_blank"
-      rel="noopener noreferrer"
+      color="inherit"
       className={styles.button}
     >
-      <img
-        src="https://img.icons8.com/?size=512&id=8808&format=png"
-        alt="LinkedIn"
-      />
-    </a>
+      <LinkedInIcon />
+    </IconButton>
   </Tooltip>
 );
 
 export const ButtonInstagram = () => (
   <Tooltip title="Instagram" style={{ backgroundColor: "#a100a1" }}>
-    <a
+    <IconButton
       href="https://www.instagram.com/_angeldvilla_/"
       target="_blank"
-      rel="noopener noreferrer"
+      color="inherit"
       className={styles.button}
     >
-      <img
-        src="https://img.icons8.com/?size=512&id=32309&format=png"
-        alt="Instagram"
-      />
-    </a>
+      <InstagramIcon />
+    </IconButton>
   </Tooltip>
 );
