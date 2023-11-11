@@ -35,7 +35,7 @@ const SocialButtons = () => {
         position: "fixed",
         top: "50%",
         transform: "translateY(-50%)",
-        left: 0,
+        left: 10,
         display: "flex",
         flexDirection: "column",
         alignItems: "center",

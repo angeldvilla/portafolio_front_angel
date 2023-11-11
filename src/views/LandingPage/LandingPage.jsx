@@ -58,7 +58,7 @@ const LandingPage = () => {
       </p>
 
       <div
-        style={{ display: "flex", justifyContent: "center", marginTop: "3em" }}
+        style={{ display: "flex", justifyContent: "center", marginTop: "3em", marginBottom: "5em" }}
       >
         <Link to="sobre mi" smooth={true} duration={800}>
           <Button

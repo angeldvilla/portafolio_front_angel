@@ -21,6 +21,8 @@ export const ButtonEmail = () => {
         color: "white",
         /* background: "linear-gradient(90deg, #1a73e8c0, #ff0000a0, #f0d8009d, #2f940090b7)" */
       }}
+      arrow
+      placement="right"
     >
       <IconButton
         onClick={handleEmailClick}
@@ -38,6 +40,8 @@ export const ButtonGitHub = () => (
   <Tooltip
     title="GitHub"
     style={{ backgroundColor: "#969696d3", color: "white" }}
+    arrow
+    placement="right"
   >
     <IconButton
       href="https://github.com/angeldvilla"
@@ -54,6 +58,8 @@ export const ButtonLinkedIn = () => (
   <Tooltip
     title="Linkedin"
     style={{ backgroundColor: "#0e76a8", color: "white" }}
+    arrow
+    placement="right"
   >
     <IconButton
       href="https://www.linkedin.com/in/angel-david-villa-luj%C3%A1n-396634255/"
@@ -70,6 +76,8 @@ export const ButtonInstagram = () => (
   <Tooltip
     title="Instagram"
     style={{ backgroundColor: "#a100a1", color: "white" }}
+    arrow
+    placement="right"
   >
     <IconButton
       href="https://www.instagram.com/_angeldvilla_/"

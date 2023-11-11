@@ -33,6 +33,7 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles.copyright}>
+        <hr style={{ borderBottom: "2px solid #333" }}/>
           <p>
             &copy; {new Date().getFullYear()} Todos los derechos reservados.
           </p>
