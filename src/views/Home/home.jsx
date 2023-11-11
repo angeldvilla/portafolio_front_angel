@@ -6,6 +6,7 @@ import LandingPage from "../LandingPage/LandingPage";
 /* import AboutMe from "../About/aboutMe"; */
 import Projects from "../Projects/projects";
 import SocialButtons from "../../components/FloatingBar/FloatingBar";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -41,6 +42,7 @@ const Home = () => {
         <Projects />
       </div>
       <SocialButtons />
+      <Footer />
     </>
   );
 };

@@ -9,10 +9,26 @@ const Projects = () => {
           justifyContent: "center",
           alignItems: "center",
           marginTop: "20em",
-          marginBottom: "2.5em",
         }}
       >
-        <h1>Mis Proyectos</h1>
+        <h1 style={{ borderBottom: "2px solid #333", paddingBottom: "0.5em" }}>
+          MIS PROYECTOS
+        </h1>
+      </div>
+      <div
+        style={{
+          textAlign: "center",
+          marginBottom: "2em",
+        }}
+      >
+         <p>
+            Explora algunos de los proyectos en los que he tenido el placer de
+            trabajar.
+          </p>
+          <p>
+            Cada proyecto representa un desafío único y una oportunidad de
+            aprendizaje.
+          </p>
       </div>
       <div
         style={{

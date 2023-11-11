@@ -18,7 +18,8 @@ export const ButtonEmail = () => {
       title="Correo"
       style={{
         backgroundColor: "#e8b11ac0",
-        /* linear-gradient(90deg, #1a73e8c0, #ff0000a0, #f0d8009d, #2f940090b7) */
+        color: "white",
+        /* background: "linear-gradient(90deg, #1a73e8c0, #ff0000a0, #f0d8009d, #2f940090b7)" */
       }}
     >
       <IconButton
@@ -34,7 +35,10 @@ export const ButtonEmail = () => {
 };
 
 export const ButtonGitHub = () => (
-  <Tooltip title="GitHub" style={{ backgroundColor: "#969696d3" }}>
+  <Tooltip
+    title="GitHub"
+    style={{ backgroundColor: "#969696d3", color: "white" }}
+  >
     <IconButton
       href="https://github.com/angeldvilla"
       target="_blank"
@@ -47,7 +51,10 @@ export const ButtonGitHub = () => (
 );
 
 export const ButtonLinkedIn = () => (
-  <Tooltip title="Linkedin" style={{ backgroundColor: "#0e76a8" }}>
+  <Tooltip
+    title="Linkedin"
+    style={{ backgroundColor: "#0e76a8", color: "white" }}
+  >
     <IconButton
       href="https://www.linkedin.com/in/angel-david-villa-luj%C3%A1n-396634255/"
       target="_blank"
@@ -60,7 +67,10 @@ export const ButtonLinkedIn = () => (
 );
 
 export const ButtonInstagram = () => (
-  <Tooltip title="Instagram" style={{ backgroundColor: "#a100a1" }}>
+  <Tooltip
+    title="Instagram"
+    style={{ backgroundColor: "#a100a1", color: "white" }}
+  >
     <IconButton
       href="https://www.instagram.com/_angeldvilla_/"
       target="_blank"
