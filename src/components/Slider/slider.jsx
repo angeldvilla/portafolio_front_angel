@@ -2,14 +2,14 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "./slider.module.css";
-import javscriptImage from "../../assets/images/JAVASCRIPT.PNG";
-import htmlImage from "../../assets/images/HTML.png";
-import cssImage from "../../assets/images/CSS.png";
-import reactImage from "../../assets/images/REACT.png";
-import reduxImage from "../../assets/images/REDUX.png";
-import boostrapImage from "../../assets/images/BOOTSTRAP.png";
-import tailwindImage from "../../assets/images/TAILWIND.png";
-import materialImage from "../../assets/images/MATERIAL-UI.png";
+import javscriptImage from "../../assets/images/javascript.PNG";
+import htmlImage from "../../assets/images/html.png";
+import cssImage from "../../assets/images/css3.png";
+import reactImage from "../../assets/images/react.png";
+import reduxImage from "../../assets/images/redux.png";
+import boostrapImage from "../../assets/images/bootstrap.png";
+import tailwindImage from "../../assets/images/tailwind.png";
+import materialImage from "../../assets/images/materialui.png";
 
 const SliderComponent = () => {
   const technologies = [
