@@ -2,7 +2,6 @@ import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-/* import Button from "@mui/material/Button"; */
 import Typography from "@mui/material/Typography";
 import WorkIcon from "@mui/icons-material/Work";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
@@ -12,30 +11,43 @@ export default function Cards(projects) {
   const handleView = () => {
     window.open(projects.projects.repositorio);
   };
+
+  const handleLink = () => {
+    window.open(projects.projects.enlace);
+  };
+
   return (
-    <Card sx={{ maxWidth: 545, margin: "auto" }}>
+    <Card style={{ borderColor: "none" }}>
       <CardMedia
-        sx={{ height: "465px" }}
+        style={{ height: "495px", borderColor: "none" }}
         image={!projects.projects.image ? advl : projects.projects.image}
-        title="Project Image"
+        title={projects.projects.title}
       />
       <CardContent>
         <Typography
-          /* gutterBottom variant="h5" */ component="div"
-          sx={{ fontFamily: "Bowlby One SC", fontSize: 25, marginBottom: 3 }}
+          component="div"
+          style={{
+            fontFamily: "Bowlby One SC",
+            fontSize: 25,
+            marginBottom: 3,
+          }}
         >
           {projects.projects.title}
         </Typography>
         <Typography
-          /* variant="body2" */
           color="text.secondary"
-          sx={{ fontFamily: "Libre Franklin", fontSize: 14 }}
+          style={{
+            fontFamily: "Libre Franklin",
+            fontSize: 14,
+            maxHeight: "200px",
+            overflow: "hidden",
+          }}
         >
           {projects.projects.description}
         </Typography>
       </CardContent>
       <CardActions
-        sx={{
+        style={{
           marginTop: 2,
           marginBottom: "2.5em",
           display: "flex",
@@ -57,6 +69,7 @@ export default function Cards(projects) {
             alignItems: "center",
             textAlign: "center",
           }}
+          onClick={handleLink}
         >
           Ver Proyecto <PlayCircleIcon sx={{ marginLeft: "10px" }} />
         </button>

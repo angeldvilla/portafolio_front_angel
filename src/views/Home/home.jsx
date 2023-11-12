@@ -29,17 +29,16 @@ const Home = () => {
       </div>
       <SocialButtons />
 
-      <div id="sobre mi">
+      <section id="sobre mi">
         {/* <Projects /> */}
         <AboutMe />
-      </div>
-      <div id="proyectos">
+      </section>
+      <section id="proyectos">
         <Projects />
-      </div>
-      <div id="contacto">
-        <Projects />
-      </div>
-      {/* <SocialButtons /> */}
+      </section>
+      <section id="contacto">
+        {/* <Projects /> */}
+      </section>
       <Footer />
     </div>
   );
