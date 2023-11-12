@@ -1,5 +1,5 @@
 // AnimatedBackground.jsx
-import styles from "./AnimatedBackground.module.css";
+import styles from "./animatedBackground.module.css";
 
 const AnimatedBackground = () => {
   return (
