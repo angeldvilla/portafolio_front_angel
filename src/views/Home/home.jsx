@@ -7,6 +7,7 @@ import LandingPage from "../LandingPage/LandingPage";
 import Projects from "../Projects/projects";
 import SocialButtons from "../../components/FloatingBar/FloatingBar";
 import Footer from "../../components/Footer/Footer";
+import AnimatedBackground from "../AnimatedBackground/Animatedbackground";
 import style from "./home.module.css";
 
 const Home = () => {
@@ -18,17 +19,11 @@ const Home = () => {
   }, [dispatch]);
 
   return (
-    <div >
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-        className={style.homeContainer}
-      >
+    <div>
+      <div className={style.homeContainer}>
+      <AnimatedBackground />
         <NavBar />
-        <div id="inicio">
+        <div id="inicio" className={style.landingPageContainer}>
           <LandingPage />
         </div>
       </div>

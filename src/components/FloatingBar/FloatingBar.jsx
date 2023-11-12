@@ -33,9 +33,9 @@ const SocialButtons = () => {
     <div
       style={{
         position: "fixed",
+        zIndex: 1,
         top: "50%",
         transform: "translateY(-50%)",
-        left: 10,
         display: "flex",
         flexDirection: "column",
         alignItems: "center",

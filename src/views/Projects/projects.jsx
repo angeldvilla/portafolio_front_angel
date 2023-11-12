@@ -8,7 +8,7 @@ const Projects = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          marginTop: "20em",
+          marginTop: "5em",
         }}
       >
         <h1 style={{ borderBottom: "2px solid #333", paddingBottom: "0.5em" }}>

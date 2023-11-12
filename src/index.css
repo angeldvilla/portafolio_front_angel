@@ -12,6 +12,11 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
   h1 {
     font-family: "Bowlby One SC", sans-serif;
     font-size: 3em;

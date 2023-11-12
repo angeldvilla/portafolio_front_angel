@@ -1,39 +1,11 @@
 .homeContainer {
-  background-color: #757575;
-  min-height: 100vh;
-}
-/* Estilos para el contenido principal */
-.content {
-  margin-left: 250px;
-  padding: 1px;
-}
-
-/* Estilos para la barra lateral */
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 250px;
-  height: 100%;
-  background-color: #333;
-  color: #fff;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  position: relative;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 10px;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
+.landingPageContainer {
+  position: relative;
+  z-index: 2;
 }
