@@ -3,6 +3,7 @@ import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import emailjs from "@emailjs/browser";
 import styles from "./contact.module.css";
+import { validateForm } from "../../validateForm";
 import { toast, Toaster } from "sonner";
 
 const Contact = () => {
@@ -11,6 +12,8 @@ const Contact = () => {
     email: "",
     message: "",
   });
+
+  const [errors, setErrors] = useState({});
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -23,14 +26,24 @@ const Contact = () => {
       email: "",
       message: "",
     });
+    setErrors({});
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
+    const validationErrors = validateForm(form);
+    setErrors(validationErrors);
+
+    // Si hay errores, detener el envío
+    if (Object.keys(validationErrors).length > 0) {
+      return;
+    }
+
     const user = {
-      to_email: "escarlata.2003@gmail.com",
+      to_email: form.email,
       user_first_name: form.name,
+      message: form.message,
     };
 
     emailjs.send(
@@ -39,13 +52,20 @@ const Contact = () => {
       user,
       "2E7Zutk3hbloWRdpZ"
     );
+
+    emailjs.send(
+      "service_fpywsm8",
+      "template_0wz6los",
+      user,
+      "2E7Zutk3hbloWRdpZ"
+    );
     handleReset();
     toast.success("Mensaje enviado correctamente");
   };
 
   return (
-    <section>
-      <div id="contact" className={styles.contactContainer}>
+    <div>
+      <div className={styles.contactContainer}>
         <Typography
           variant="h4"
           style={{ marginBottom: "20px", marginTop: "-0.5em" }}
@@ -64,6 +84,9 @@ const Contact = () => {
               required
               style={{ marginBottom: "20px" }}
             />
+            {errors.name && (
+              <p style={{ color: "red", textAlign: "center" }}>{errors.name}</p>
+            )}
             <TextField
               type="email"
               id="email"
@@ -75,6 +98,11 @@ const Contact = () => {
               required
               style={{ marginBottom: "20px" }}
             />
+            {errors.email && (
+              <p style={{ color: "red", textAlign: "center" }}>
+                {errors.email}
+              </p>
+            )}
             <TextField
               id="message"
               name="message"
@@ -88,23 +116,28 @@ const Contact = () => {
               className={styles.textareaField}
               required
             />
+            {errors.message && (
+              <p style={{ color: "red", textAlign: "center" }}>
+                {errors.message}
+              </p>
+            )}
           </div>
           <div>
             <button type="submit" className={styles.submitButton}>
               ENVIAR
             </button>
-            <button
+            {/* <button
               type="button"
               onClick={handleReset}
               className={styles.resetButton}
             >
               REINICIAR
-            </button>
+            </button> */}
           </div>
+          <Toaster position="bottom-right" richColors />
         </form>
       </div>
-      <Toaster position="top" richColors />
-    </section>
+    </div>
   );
 };
 
