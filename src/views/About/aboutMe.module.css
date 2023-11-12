@@ -1,0 +1,52 @@
+/* aboutMe.module.css */
+
+.aboutMeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titlesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.textColumn,
+.imageColumn {
+  width: 48%;
+  margin-bottom: 20px;
+  margin-top: 2em;
+  margin-bottom: 5.5em;
+}
+
+/* .imageColumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2.5em;
+} */
+
+.columnTitle {
+  color: #333;
+  margin-bottom: 1em;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2.5em;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5em;
+}
+
+.textContent {
+  text-align: center;
+  margin-bottom: 2em;
+}

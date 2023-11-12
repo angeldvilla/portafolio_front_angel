@@ -1,0 +1,43 @@
+/* slider.module.css */
+
+.sliderContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.sliderImage {
+  width: 90%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los puntos de navegación (dots) del slider */
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+  list-style: none;
+}
+
+.slick-dots li button {
+  width: 10px;
+  height: 10px;
+  background-color: #999;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #333;
+}

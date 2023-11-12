@@ -32,7 +32,7 @@ const SocialButtons = () => {
   return (
     <div
       style={{
-        position: "fixed",
+        position: "absolute",
         zIndex: 1,
         top: "50%",
         transform: "translateY(-50%)",
@@ -46,7 +46,7 @@ const SocialButtons = () => {
         borderRadius: "8px",
       }}
     >
-      <ButtonEmail />
+      <ButtonEmail placement="right"/>
       <ButtonGitHub />
       <ButtonLinkedIn />
       <ButtonInstagram />

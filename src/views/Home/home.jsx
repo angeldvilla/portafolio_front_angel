@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { getSkills, getProjects } from "../../redux/actions/actions";
 import NavBar from "../../components/NavBar/navBar";
 import LandingPage from "../LandingPage/LandingPage";
-/* import AboutMe from "../About/aboutMe"; */
+import AboutMe from "../About/aboutMe";
 import Projects from "../Projects/projects";
 import SocialButtons from "../../components/FloatingBar/FloatingBar";
 import Footer from "../../components/Footer/Footer";
@@ -21,16 +21,17 @@ const Home = () => {
   return (
     <div>
       <div className={style.homeContainer}>
-      <AnimatedBackground />
+        <AnimatedBackground />
         <NavBar />
         <div id="inicio" className={style.landingPageContainer}>
           <LandingPage />
         </div>
       </div>
+      <SocialButtons />
 
       <div id="sobre mi">
-        <Projects />
-        {/* <AboutMe /> */}
+        {/* <Projects /> */}
+        <AboutMe />
       </div>
       <div id="proyectos">
         <Projects />
@@ -38,7 +39,7 @@ const Home = () => {
       <div id="contacto">
         <Projects />
       </div>
-      <SocialButtons />
+      {/* <SocialButtons /> */}
       <Footer />
     </div>
   );
