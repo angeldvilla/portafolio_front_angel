@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "./slider.module.css";
-import javscriptImage from "../../assets/images/javascript.PNG";
+import javscriptImage from "../../assets/images/javascript.png";
 import htmlImage from "../../assets/images/html.png";
 import cssImage from "../../assets/images/css3.png";
 import reactImage from "../../assets/images/react.png";
