@@ -5,6 +5,7 @@ import NavBar from "../../components/NavBar/navBar";
 import LandingPage from "../LandingPage/LandingPage";
 import AboutMe from "../About/aboutMe";
 import Projects from "../Projects/projects";
+import Contact from "../Contact/Contact";
 import SocialButtons from "../../components/FloatingBar/FloatingBar";
 import Footer from "../../components/Footer/Footer";
 import AnimatedBackground from "../AnimatedBackground/Animatedbackground";
@@ -23,9 +24,9 @@ const Home = () => {
       <div className={style.homeContainer}>
         <AnimatedBackground />
         <NavBar />
-        <div id="inicio" className={style.landingPageContainer}>
+        <section id="inicio" className={style.landingPageContainer}>
           <LandingPage />
-        </div>
+        </section>
       </div>
       <SocialButtons />
 
@@ -36,9 +37,12 @@ const Home = () => {
       <section id="proyectos">
         <Projects />
       </section>
-      <section id="contacto">
-        {/* <Projects /> */}
-      </section>
+      <div className={style.homeContainer}>
+        <AnimatedBackground />
+        <section id="contacto" className={style.landingPageContainer}>
+          <Contact />
+        </section>
+      </div>
       <Footer />
     </div>
   );

@@ -16,6 +16,7 @@
     "@lottiefiles/react-lottie-player": "^3.5.3",
     "@mui/icons-material": "^5.14.16",
     "@mui/material": "^5.14.17",
+    "@emailjs/browser": "^3.11.0",
     "atropos": "^2.0.2",
     "axios": "^1.4.0",
     "react": "^18.2.0",
