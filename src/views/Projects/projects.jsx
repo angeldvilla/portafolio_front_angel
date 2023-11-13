@@ -18,7 +18,7 @@ const Projects = () => {
             </p>
             <p>
               Estos proyectos son testimonio de mi crecimiento y evolución como
-              profesional en el campo de la Tecnología de la Información. Cada
+              profesional en el campo de la tecnología de la información. Cada
               uno de ellos ha contribuido a moldear mi comprensión y habilidades
               técnicas, y me ha permitido aplicar y expandir mis conocimientos
               de manera práctica y significativa.

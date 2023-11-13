@@ -1,4 +1,5 @@
 import SliderComponent from "../../components/Slider/slider";
+import SliderBack from "../../components/Slider/slider2";
 import styles from "./aboutMe.module.css";
 
 const AboutMe = () => {
@@ -38,9 +39,13 @@ const AboutMe = () => {
 
         <div className={styles.imageColumn}>
           <div className={styles.sectionHeader}>
-            <h1>TECNOLOGIAS</h1>
+            <h1>FRONT-END</h1>
           </div>
           <SliderComponent />
+          <div className={styles.sectionHeader}>
+            <h1>BACK-END</h1>
+          </div>
+          <SliderBack />
         </div>
       </div>
     </div>

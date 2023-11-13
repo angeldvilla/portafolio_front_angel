@@ -5,7 +5,6 @@ import { GET_PROJECTS, GET_SKILLS } from "./actionTypes";
 export const getProjects = () => {
   return async (dispatch) => {
     const projectsPath = `${ENDPOINT}${PROJECTS_URL}`;
-    console.log(projectsPath);
     try {
       const { data } = await axios.get(projectsPath);
       return dispatch({
