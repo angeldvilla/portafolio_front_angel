@@ -46,6 +46,7 @@ const Contact = () => {
       message: form.message,
     };
 
+    //Email para el remitente
     emailjs.send(
       "service_fpywsm8",
       "template_f5fhtes",
@@ -53,6 +54,7 @@ const Contact = () => {
       "2E7Zutk3hbloWRdpZ"
     );
 
+    //Email de notificación
     emailjs.send(
       "service_fpywsm8",
       "template_0wz6los",
