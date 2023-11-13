@@ -5,11 +5,11 @@ import styles from "./slider.module.css";
 import javscriptimage from "../../assets/images/js.png";
 import htmlimage from "../../assets/images/hypertext.png";
 import cssimage from "../../assets/images/css3.png";
-import reactimage from "../../assets/images/react.png";
-import reduximage from "../../assets/images/redux.png";
-import boostrapimage from "../../assets/images/bootstrap.png";
-import tailwindimage from "../../assets/images/tailwind.png";
-import materialimage from "../../assets/images/materialui.png";
+import reactimage from "../../assets/images/rct.png";
+import reduximage from "../../assets/images/rdx.png";
+import boostrapimage from "../../assets/images/btp.png";
+import tailwindimage from "../../assets/images/twl.png";
+import materialimage from "../../assets/images/mtui.png";
 
 const SliderComponent = () => {
   const technologies = [
