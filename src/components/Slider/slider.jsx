@@ -2,25 +2,25 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "./slider.module.css";
-import javscriptImage from "../../assets/images/javascript.png";
-import htmlImage from "../../assets/images/html.png";
-import cssImage from "../../assets/images/css3.png";
-import reactImage from "../../assets/images/react.png";
-import reduxImage from "../../assets/images/redux.png";
-import boostrapImage from "../../assets/images/bootstrap.png";
-import tailwindImage from "../../assets/images/tailwind.png";
-import materialImage from "../../assets/images/materialui.png";
+import javscriptimage from "../../assets/images/javascript.png";
+import htmlimage from "../../assets/images/html.png";
+import cssimage from "../../assets/images/css3.png";
+import reactimage from "../../assets/images/react.png";
+import reduximage from "../../assets/images/redux.png";
+import boostrapimage from "../../assets/images/bootstrap.png";
+import tailwindimage from "../../assets/images/tailwind.png";
+import materialimage from "../../assets/images/materialui.png";
 
 const SliderComponent = () => {
   const technologies = [
-    htmlImage,
-    javscriptImage,
-    cssImage,
-    reactImage,
-    reduxImage,
-    boostrapImage,
-    tailwindImage,
-    materialImage,
+    htmlimage,
+    javscriptimage,
+    cssimage,
+    reactimage,
+    reduximage,
+    boostrapimage,
+    tailwindimage,
+    materialimage,
   ];
 
   const settings = {
