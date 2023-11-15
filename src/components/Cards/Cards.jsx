@@ -17,16 +17,16 @@ export default function Cards(projects) {
   };
 
   return (
-    <Card style={{ borderColor: "none" }}>
+    <Card sx={{ boxShadow: "none" }}>
       <CardMedia
-        style={{ height: "495px", borderColor: "none" }}
+        style={{ height: "295px", width: "100%", objectFit: "cover" }}
         image={!projects.projects.image ? advl : projects.projects.image}
         title={projects.projects.title}
       />
       <CardContent>
         <Typography
           component="div"
-          style={{
+          sx={{
             fontFamily: "Bowlby One SC",
             fontSize: 25,
             marginBottom: 3,
@@ -36,7 +36,7 @@ export default function Cards(projects) {
         </Typography>
         <Typography
           color="text.secondary"
-          style={{
+          sx={{
             fontFamily: "Libre Franklin",
             fontSize: 14,
             maxHeight: "200px",
@@ -47,7 +47,7 @@ export default function Cards(projects) {
         </Typography>
       </CardContent>
       <CardActions
-        style={{
+        sx={{
           marginTop: 2,
           marginBottom: "2.5em",
           display: "flex",

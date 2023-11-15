@@ -49,7 +49,7 @@ function ResponsiveAppBar() {
     <AppBar
       position="fixed"
       style={{
-        backgroundColor: isScrolled ? "#2b2b2bf4" : "#860900",
+        backgroundColor: isScrolled ? "#2b2b2bf4" : "#9e241ccf",
         transition: "background-color 0.3s",
       }}
     >

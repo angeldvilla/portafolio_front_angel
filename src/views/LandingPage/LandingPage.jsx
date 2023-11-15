@@ -7,17 +7,23 @@ import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import PinDropIcon from "@mui/icons-material/PinDrop";
 import miFoto from "../../assets/images/yo.jpg";
 import style from "../../components/Buttons/buttons.module.css";
-import CV from "../../assets/PDF/CV Resume - Angel David Villa - Frontend Developer Jr -2023.pdf";
+/* import CV from "../../assets/PDF/CV Resume - Angel David Villa - Frontend Developer Jr -2023.pdf"; */
 
 const LandingPage = () => {
   const handleDownloadCV = () => {
-    const link = document.createElement("a");
+    //Ver en drive
+    window.open(
+      "https://drive.google.com/file/d/1QNzFKAGN9vE_NW7OjvSaUf5B9DUAv4wc/view?usp=sharing"
+    );
+
+    //Descargar en local
+    /* const link = document.createElement("a");
     link.href = CV;
 
     const fileName = CV.split("/").pop();
 
     link.download = fileName;
-    link.click();
+    link.click(); */
   };
 
   return (
