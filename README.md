@@ -46,7 +46,7 @@ Aquí encontrarás una selección de proyectos en los que he trabajado. Cada pro
 
 Estoy siempre interesado en nuevas oportunidades de colaboración y en conectarme con otros apasionados del desarrollo web o empresas. Si deseas colaborar o charlar, ¡no dudes en contactarme!
 
-- Correo Electrónico: [Gmail](https://mail.google.com/mail/?view=cm&fs=1&to=escarlata.2003@gmail.com)
+- Correo Electrónico: [escarlata.2003@gmail.com](https://mail.google.com/mail/?view=cm&fs=1&to=escarlata.2003@gmail.com)
 - LinkedIn: [Angel David Villa Luján](https://www.linkedin.com/in/angel-david-villa-luj%C3%A1n-396634255/)
 - Otros Enlaces Sociales: [Instagram](https://www.instagram.com/_angeldvilla_)
 
