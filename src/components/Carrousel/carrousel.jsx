@@ -3,8 +3,10 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Cards from "../Cards/Cards";
 import styles from "../../views/Projects/projects.module.css";
+import { UseTheme } from "../../theme/ThemeContext";
 
 const CarrouselProjects = () => {
+  const { darkMode } = UseTheme();
   const projects = useSelector((state) => state?.projects);
   return (
     <div className={styles.carrouselContainer}>
@@ -16,6 +18,7 @@ const CarrouselProjects = () => {
         stopOnHover={true}
         showIndicators={false}
         transitionTime={1000}
+        interval={3000}
       >
         {projects &&
           projects.map((project) => (

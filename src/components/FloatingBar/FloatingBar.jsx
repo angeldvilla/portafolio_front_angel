@@ -5,8 +5,10 @@ import {
   ButtonInstagram,
   ButtonLinkedIn,
 } from "../Buttons/buttons";
+import { UseTheme } from "../../theme/ThemeContext";
 
 const SocialButtons = () => {
+  const { darkMode } = UseTheme();
   const [isAtBottom, setIsAtBottom] = useState(false);
 
   useEffect(() => {
@@ -41,7 +43,7 @@ const SocialButtons = () => {
         alignItems: "center",
         gap: "10px",
         padding: "18px",
-        backgroundColor: isAtBottom ? "transparent" : "#2b2b2bf4",
+        backgroundColor: darkMode ? "#2b2b2bf4" : "#ecd9d9",
         transition: "background-color 0.3s ease-in-out",
         borderRadius: "8px",
       }}

@@ -1,9 +1,11 @@
 import CarrouselProjects from "../../components/Carrousel/carrousel";
+import { UseTheme } from "../../theme/ThemeContext";
 import styles from "./projects.module.css";
 
 const Projects = () => {
+  const { darkMode } = UseTheme();
   return (
-    <div className={styles.projectsContainer}>
+    <div className={`${darkMode ? styles.projectsContainerDark : styles.projectsContainer}`}>
       <div className={styles.titlesContainer}>
         <div className={styles.textColumn}>
           <div className={styles.sectionHeader}>

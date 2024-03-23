@@ -1,6 +1,7 @@
 /* aboutMe.module.css */
 
 .aboutMeContainer {
+  background-color: rgb(241, 228, 227);
   display: flex;
   justify-content: center;
   align-items: center;

@@ -11,6 +11,18 @@
   align-items: center;
 }
 
+.contactContainerDark {
+  background-color: #1f1e1ef4;
+  color: #d1d5db;
+  margin-top: 4em;
+  margin-bottom: 8em;
+  padding: 5em;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .contactTitle {
  margin-bottom: 16px;
 }
@@ -27,12 +39,10 @@
 .inputField,
 .textareaField {
   width: 100%;
-  padding: 8px;
-  margin-bottom: 16px;
 }
 
 .submitButton,
-.resetButton {
+.submitButtonDark {
   width: 100%;
   margin-top: 16px;
   padding: 1em;
@@ -52,12 +62,12 @@
   transition: 1s ease-out;
 }
 
-.resetButton {
-  background-color: rgba(138, 0, 0, 0.884);
+.submitButtonDark {
+  background-color: #8b0606f4;
   color: white;
 }
 
-.resetButton:hover {
-  background-color: #860900;
-  transition: 1ms ease-out;
+.submitButtonDark:hover {
+  background-color: #8b0606c0;
+  transition: 1s ease-out;
 }

@@ -9,10 +9,12 @@ import { IconButton } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import { UseTheme } from "../../theme/ThemeContext";
 
 export default function Footer() {
+  const { darkMode } = UseTheme();
   return (
-    <footer className={styles.footer}>
+    <footer className={`${darkMode ? styles.footerDark : styles.footer}`}>
       <div className={styles.container}>
         <div>
           <a href="/">

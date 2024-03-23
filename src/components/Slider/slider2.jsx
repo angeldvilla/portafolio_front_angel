@@ -4,11 +4,19 @@ import "slick-carousel/slick/slick-theme.css";
 import styles from "./slider.module.css";
 import nodejsImage from "../../assets/images/nodo.png";
 import expressImage from "../../assets/images/exp.png";
+import expressDark from "../../assets/images/Expressjs.png";
 import mysqlImage from "../../assets/images/msql.png";
 import postgreImage from "../../assets/images/postsql.png";
+import { UseTheme } from "../../theme/ThemeContext";
 
 const SliderBack = () => {
-  const technologies = [nodejsImage, expressImage, mysqlImage, postgreImage];
+  const { darkMode } = UseTheme();
+  const technologies = [
+    nodejsImage,
+    darkMode ? expressDark : expressImage,
+    mysqlImage,
+    postgreImage,
+  ];
 
   const settings = {
     dots: true,

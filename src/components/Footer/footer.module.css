@@ -1,7 +1,12 @@
 /* Footer.module.css */
-
 .footer {
-  background-color: #2b2b2bf4;
+  background-color: rgb(233, 207, 205);
+  color: #0a0a0a;
+  padding: 32px;
+}
+
+.footerDark {
+  background-color: #2B2B2B;
   color: #d1d5db;
   padding: 32px;
 }

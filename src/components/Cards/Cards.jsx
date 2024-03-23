@@ -6,8 +6,10 @@ import Typography from "@mui/material/Typography";
 import WorkIcon from "@mui/icons-material/Work";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import advl from "../../assets/images/miLogo.png";
+import { UseTheme } from "../../theme/ThemeContext";
 
 export default function Cards(projects) {
+  const { darkMode } = UseTheme();
   const handleView = () => {
     window.open(projects.projects.repositorio);
   };
@@ -17,82 +19,80 @@ export default function Cards(projects) {
   };
 
   return (
-    <Card sx={{ boxShadow: "none" }}>
+    <Card
+      sx={{
+        boxShadow: "none",
+        backgroundColor: "transparent",
+        color: darkMode ? "#ffffff" : "#000000",
+        height: "100%",
+      }}
+    >
       <CardMedia
-        style={{ height: "295px", width: "100%", objectFit: "cover" }}
+        component="img"
+        height="295"
         image={!projects.projects.image ? advl : projects.projects.image}
         title={projects.projects.title}
       />
-      <CardContent>
+      <CardContent style={{ flexGrow: 1 }}>
         <Typography
           component="div"
-          sx={{
+          style={{
             fontFamily: "Bowlby One SC",
-            fontSize: 25,
-            marginBottom: 3,
+            fontSize: "25px",
+            marginBottom: "15px",
           }}
         >
           {projects.projects.title}
         </Typography>
         <Typography
+          variant="body2"
           color="text.secondary"
-          sx={{
+          style={{
             fontFamily: "Libre Franklin",
-            fontSize: 14,
-            maxHeight: "200px",
+            fontSize: "14px",
             overflow: "hidden",
+            textOverflow: "ellipsis",
+            maxHeight: "100px",
+            color: darkMode ? "#ffffffb7" : "#000000",
           }}
         >
           {projects.projects.description}
         </Typography>
       </CardContent>
       <CardActions
-        sx={{
-          marginTop: 2,
-          marginBottom: "2.5em",
-          display: "flex",
+        style={{
           justifyContent: "center",
+          marginTop: "2px",
+          marginBottom: "2px",
         }}
       >
         <button
           size="small"
-          style={{
-            fontFamily: "Kanit",
-            fontSize: 14,
-            backgroundColor: "#0b00a1",
-            border: "none",
-            color: "white",
-            borderRadius: "8px",
-            padding: "5px 10px",
-            cursor: "pointer",
-            display: "flex",
-            alignItems: "center",
-            textAlign: "center",
-          }}
+          style={{ ...buttonStyle, backgroundColor: "#00366d" }}
           onClick={handleLink}
         >
-          Ver Proyecto <PlayCircleIcon sx={{ marginLeft: "10px" }} />
+          Ver Proyecto <PlayCircleIcon sx={{ marginLeft: "5px" }} />
         </button>
         <button
           size="small"
-          style={{
-            fontFamily: "Kanit",
-            fontSize: 14,
-            backgroundColor: "#791c00",
-            border: "none",
-            color: "white",
-            borderRadius: "8px",
-            padding: "5px 10px",
-            cursor: "pointer",
-            display: "flex",
-            alignItems: "center",
-            textAlign: "center",
-          }}
+          style={{ ...buttonStyle, backgroundColor: "#920101" }}
           onClick={handleView}
         >
-          Ver Repositorio <WorkIcon sx={{ marginLeft: "10px" }} />
+          Ver Repositorio <WorkIcon sx={{ marginLeft: "5px" }} />
         </button>
       </CardActions>
     </Card>
   );
 }
+
+const buttonStyle = {
+  fontFamily: "Kanit",
+  fontSize: "14px",
+  border: "none",
+  color: "white",
+  borderRadius: "8px",
+  padding: "5px 10px",
+  cursor: "pointer",
+  display: "flex",
+  alignItems: "center",
+};

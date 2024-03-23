@@ -5,8 +5,10 @@ import emailjs from "@emailjs/browser";
 import styles from "./contact.module.css";
 import { validateForm } from "../../validateForm";
 import { toast, Toaster } from "sonner";
+import { UseTheme } from "../../theme/ThemeContext";
 
 const Contact = () => {
+  const { darkMode } = UseTheme();
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -67,10 +69,14 @@ const Contact = () => {
 
   return (
     <div>
-      <div className={styles.contactContainer}>
+      <div
+        className={`${
+          darkMode ? styles.contactContainerDark : styles.contactContainer
+        }`}
+      >
         <Typography
           variant="h4"
-          style={{ marginBottom: "20px", marginTop: "-0.5em" }}
+          style={{ marginBottom: "30px", marginTop: "-0.5em" }}
         >
           ¡Contáctame, deja tu mensaje!
         </Typography>
@@ -80,11 +86,21 @@ const Contact = () => {
               id="name"
               name="name"
               label="Nombre Completo"
+              InputLabelProps={{
+                shrink: true,
+                style: { color: darkMode ? " #ffffff" : "#000" },
+              }}
               value={form.name}
               onChange={handleChange}
+              placeholder="Escribe tu nombre completo"
               className={styles.inputField}
               required
-              style={{ marginBottom: "20px" }}
+              sx={{
+                marginBottom: "50px",
+                bgcolor: darkMode ? "#a1a0a0" : "",
+                color: darkMode ? "#fff" : "#fff",
+                borderRadius: 2,
+              }}
             />
             {errors.name && (
               <p style={{ color: "red", textAlign: "center" }}>{errors.name}</p>
@@ -94,11 +110,21 @@ const Contact = () => {
               id="email"
               name="email"
               label="Correo Electrónico"
+              InputLabelProps={{
+                shrink: true,
+                style: { color: darkMode ? " #ffffff" : "#000" },
+              }}
               value={form.email}
               onChange={handleChange}
+              placeholder="Escribe tu correo electrónico"
               className={styles.inputField}
               required
-              style={{ marginBottom: "20px" }}
+              sx={{
+                marginBottom: "50px",
+                bgcolor: darkMode ? "#a1a0a0" : "",
+                color: darkMode ? "#fff" : "#fff",
+                borderRadius: 2,
+              }}
             />
             {errors.email && (
               <p style={{ color: "red", textAlign: "center" }}>
@@ -111,12 +137,19 @@ const Contact = () => {
               label="Mensaje"
               InputLabelProps={{
                 shrink: true,
+                style: { color: darkMode ? " #ffffff" : "#000" },
               }}
               value={form.message}
               onChange={handleChange}
               placeholder="Escribe tu mensaje aquí"
               className={styles.textareaField}
               required
+              sx={{
+                marginBottom: "20px",
+                bgcolor: darkMode ? "#a1a0a0" : "",
+                color: darkMode ? "#fff" : "#fff",
+                borderRadius: 2,
+              }}
             />
             {errors.message && (
               <p style={{ color: "red", textAlign: "center" }}>
@@ -125,7 +158,12 @@ const Contact = () => {
             )}
           </div>
           <div>
-            <button type="submit" className={styles.submitButton}>
+            <button
+              type="submit"
+              className={`${
+                darkMode ? styles.submitButtonDark : styles.submitButton
+              }`}
+            >
               ENVIAR
             </button>
             {/* <button
@@ -136,7 +174,7 @@ const Contact = () => {
               REINICIAR
             </button> */}
           </div>
-          <Toaster position="bottom-right" richColors />
+          <Toaster position="top-right" richColors />
         </form>
       </div>
     </div>

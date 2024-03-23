@@ -1,10 +1,12 @@
 import SliderComponent from "../../components/Slider/slider";
 import SliderBack from "../../components/Slider/slider2";
+import { UseTheme } from "../../theme/ThemeContext";
 import styles from "./aboutMe.module.css";
 
 const AboutMe = () => {
+  const { darkMode } = UseTheme();
   return (
-    <div className={styles.aboutMeContainer}>
+    <div className={`${darkMode ? styles.aboutMeContainerDark : styles.aboutMeContainer}`}>
       <div className={styles.titlesContainer}>
         <div className={styles.textColumn}>
           <div className={styles.sectionHeader}>

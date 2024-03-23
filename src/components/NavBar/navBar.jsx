@@ -14,10 +14,12 @@ import MenuItem from "@mui/material/MenuItem";
 import advl from "../../assets/images/miLogo.png";
 import DarkMode from "../DarkMode/darkMode";
 import styles from "../Buttons/buttons.module.css";
+import { UseTheme } from "../../theme/ThemeContext";
 
 const pages = ["Inicio", "Sobre Mi", "Proyectos", "Contacto"];
 
 function ResponsiveAppBar() {
+  const { darkMode, setDarkMode } = UseTheme();
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -27,6 +29,10 @@ function ResponsiveAppBar() {
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
+  };
+
+  const toggleDarkMode = () => {
+    setDarkMode((prevDarkMode) => !prevDarkMode);
   };
 
   useEffect(() => {
@@ -49,8 +55,9 @@ function ResponsiveAppBar() {
     <AppBar
       position="fixed"
       style={{
-        backgroundColor: isScrolled ? "#2b2b2bf4" : "#9e241ccf",
+        backgroundColor: isScrolled ? darkMode ? "#2b2b2bf4" : "#837777f4" :  darkMode ? "#9e241ccf" : "rgb(241, 145, 134)",
         transition: "background-color 0.3s",
+        color : darkMode ? "#0a0a0a" : "#fffff",
       }}
     >
       <Container maxWidth="xl">
@@ -74,7 +81,7 @@ function ResponsiveAppBar() {
                 fontFamily: "monospace",
                 fontWeight: 700,
                 letterSpacing: ".3rem",
-                color: "inherit",
+                color: "white",
                 textDecoration: "none",
               }}
             >
@@ -122,7 +129,7 @@ function ResponsiveAppBar() {
                   fontFamily: "monospace",
                   fontWeight: 700,
                   letterSpacing: ".2rem",
-                  color: "inherit",
+                  color: "white",
                   textDecoration: "none",
                 }}
               >
@@ -211,7 +218,7 @@ function ResponsiveAppBar() {
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0, marginLeft: "10px" }}>
+          <Box sx={{ flexGrow: 0, marginLeft: "10px" }} onClick={toggleDarkMode}>
             <DarkMode />
           </Box>
         </Toolbar>

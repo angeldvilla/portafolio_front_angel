@@ -7,9 +7,11 @@ import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import PinDropIcon from "@mui/icons-material/PinDrop";
 import miFoto from "../../assets/images/yo.jpg";
 import style from "../../components/Buttons/buttons.module.css";
+import { UseTheme } from "../../theme/ThemeContext";
 /* import CV from "../../assets/PDF/CV Resume - Angel David Villa - Frontend Developer Jr -2023.pdf"; */
 
 const LandingPage = () => {
+  const { darkMode } = UseTheme();
   const handleDownloadCV = () => {
     //Ver en drive
     window.open(
@@ -28,7 +30,7 @@ const LandingPage = () => {
 
   return (
     <div>
-      <div style={{ marginTop: "6em", textAlign: "center" }}>
+      <div style={{ marginTop: "8em", textAlign: "center" }}>
         <Atropos
           className="my-atropos"
           shadow={false}
@@ -41,12 +43,19 @@ const LandingPage = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
+              color: darkMode ? "#ffff" : "#883434",
             }}
           >
             BIENVENIDOS A MI PORTAFOLIO WEB{" "}
-            <BusinessCenterIcon sx={{ fontSize: 50, marginLeft: "10px" }} />
+            <BusinessCenterIcon sx={{ fontSize: 50, marginLeft: "5px" }} />
           </h1>
-          <h3>MI NOMBRE ES ANGEL DAVID VILLA</h3>
+          <h3
+            style={{
+              color: darkMode ? "#ffff" : "#883434",
+            }}
+          >
+            MI NOMBRE ES ANGEL DAVID VILLA
+          </h3>
           <img
             src={miFoto}
             style={{
@@ -106,7 +115,7 @@ const LandingPage = () => {
             className={style.downloadCV}
             style={{
               display: "flex",
-              backgroundColor: "#080079",
+              backgroundColor: "#001E3C",
               color: "white",
               borderRadius: "8px",
               padding: "10px 20px",
