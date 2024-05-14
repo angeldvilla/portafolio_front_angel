@@ -15,7 +15,7 @@ const LandingPage = () => {
   const handleDownloadCV = () => {
     //Ver en drive
     window.open(
-      "https://drive.google.com/file/d/1QNzFKAGN9vE_NW7OjvSaUf5B9DUAv4wc/view?usp=sharing"
+      "https://drive.google.com/file/d/1LBk_5-QqP7rxNRG6hrhojdgLnbtQJjbB/view?usp=sharing"
     );
 
     //Descargar en local
