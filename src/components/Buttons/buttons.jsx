@@ -5,6 +5,10 @@ import Email from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import { UseTheme } from "../../theme/ThemeContext";
+
+
+const { darkMode } = UseTheme();
 
 export const ButtonEmail = () => {
   const handleEmailClick = () => {
@@ -39,7 +43,7 @@ export const ButtonEmail = () => {
 export const ButtonGitHub = () => (
   <Tooltip
     title="GitHub"
-    style={{ backgroundColor: "#969696d3", color: "white" }}
+    style={{ backgroundColor: darkMode ? "#4078c0" : "#969696d3", color: "white" }}
     arrow
     placement="right"
   >
