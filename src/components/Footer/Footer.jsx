@@ -42,7 +42,7 @@ export default function Footer() {
             {/* <ButtonGitHub /> */}
             <Tooltip
               title="GitHub"
-              style={{ backgroundColor: "#969696d3", color: "white" }}
+              style={{ backgroundColor: darkMode ? "#4078c0" : "#969696d3", color: "white" }}
               arrow
               placement="bottom"
             >
