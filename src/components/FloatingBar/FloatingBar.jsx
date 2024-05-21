@@ -48,8 +48,8 @@ const SocialButtons = () => {
         borderRadius: "8px",
       }}
     >
-      <ButtonEmail placement="right"/>
-      <ButtonGitHub />
+      <ButtonEmail />
+      <ButtonGitHub darkMode={darkMode} />
       <ButtonLinkedIn />
       <ButtonInstagram />
     </div>

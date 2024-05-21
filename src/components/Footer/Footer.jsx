@@ -2,7 +2,7 @@ import advl from "../../assets/images/miLogo.png";
 import LocationCityIcon from "@mui/icons-material/LocationCity";
 import Email from "@mui/icons-material/Email";
 import ComputerIcon from "@mui/icons-material/Computer";
-import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import PhoneAndroid  from "@mui/icons-material/PhoneAndroid";
 import styles from "./footer.module.css";
 import Tooltip from "@mui/material/Tooltip";
 import { IconButton } from "@mui/material";
@@ -32,7 +32,7 @@ export default function Footer() {
               <Email /> escarlata.2003@gmail.com
             </p>
             <p>
-              <LocalPhoneIcon /> +57 3015985993
+              <PhoneAndroid /> +57 3015985993
             </p>
             <p>
               <ComputerIcon /> Desarrollado por Angel Villa{" "}
