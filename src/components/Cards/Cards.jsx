@@ -5,7 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import WorkIcon from "@mui/icons-material/Work";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
-import advl from "../../assets/images/miLogo.png";
+import defaultImage from "../../assets/images/defaultImage.jpg";
 import { UseTheme } from "../../theme/ThemeContext";
 
 export default function Cards(projects) {
@@ -30,7 +30,7 @@ export default function Cards(projects) {
       <CardMedia
         component="img"
         height="295"
-        image={!projects.projects.image ? advl : projects.projects.image}
+        image={!projects.projects.image ? defaultImage : projects.projects.image}
         title={projects.projects.title}
       />
       <CardContent style={{ flexGrow: 1 }}>
