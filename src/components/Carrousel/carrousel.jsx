@@ -17,7 +17,7 @@ const CarrouselProjects = () => {
         infiniteLoop={true}
         stopOnHover={true}
         showIndicators={false}
-        transitionTime={1000}
+        transitionTime={7000}
         interval={3000}
       >
         {projects &&
