@@ -17,8 +17,8 @@ const CarrouselProjects = () => {
         infiniteLoop={true}
         stopOnHover={true}
         showIndicators={false}
-        transitionTime={4000}
-        interval={3000}
+        transitionTime={2000}
+        interval={8000}
       >
         {projects &&
           projects.map((project) => (

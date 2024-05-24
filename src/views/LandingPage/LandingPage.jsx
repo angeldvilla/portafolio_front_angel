@@ -30,7 +30,7 @@ const LandingPage = () => {
 
   return (
     <div>
-      <div style={{ marginTop: "8em", textAlign: "center" }}>
+      <div style={{ marginTop: "6em", textAlign: "center" }}>
         <Atropos
           className="my-atropos"
           shadow={false}
@@ -44,6 +44,7 @@ const LandingPage = () => {
               alignItems: "center",
               justifyContent: "center",
               color: darkMode ? "#ffff" : "#883434",
+              fontSize: 40,
             }}
           >
             BIENVENIDOS A MI PORTAFOLIO WEB{" "}
@@ -52,6 +53,7 @@ const LandingPage = () => {
           <h3
             style={{
               color: darkMode ? "#ffff" : "#883434",
+              fontFamily: "fantasy"
             }}
           >
             MI NOMBRE ES ANGEL DAVID VILLA
@@ -59,17 +61,17 @@ const LandingPage = () => {
           <img
             src={miFoto}
             style={{
-              width: "150px",
+              width: "165px",
               height: "auto",
               borderRadius: "50%",
             }}
             alt="Mi Logo"
           />
         </Atropos>
-        <p style={{ textAlign: "center" }}>
+        <p style={{ textAlign: "center", fontSize: 17.5, fontFamily: "cursive" }}>
           Soy un desarrollador Front-End y Full-Stack con 1 año de experiencia
         </p>
-        <p style={{ textAlign: "center" }}>
+        <p style={{ textAlign: "center", fontSize: 17.5, fontFamily: "cursive" }}>
           en Javascript, React, Redux, Node, Express, PostgreSQL y mySQL .
         </p>
         <p
@@ -77,6 +79,8 @@ const LandingPage = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            fontFamily: "cursive",
+            fontSize: 17.5
           }}
         >
           Actualmente vivo en Cartago, Valle - Colombia.{" "}

@@ -37,7 +37,7 @@ export default function Cards(projects) {
         <Typography
           component="div"
           style={{
-            fontFamily: "Bowlby One SC",
+            fontFamily: "fantasy",
             fontSize: "25px",
             marginBottom: "15px",
           }}
@@ -48,7 +48,7 @@ export default function Cards(projects) {
           variant="body2"
           color="text.secondary"
           style={{
-            fontFamily: "Libre Franklin",
+            fontFamily: "cursive",
             fontSize: "14px",
             overflow: "hidden",
             textOverflow: "ellipsis",

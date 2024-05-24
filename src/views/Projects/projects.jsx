@@ -12,13 +12,13 @@ const Projects = () => {
             <h1>MIS PROYECTOS</h1>
           </div>
           <div className={styles.textContent}>
-            <p>
+            <p style={{ fontFamily: "cursive" }}>
               Explora algunos de los proyectos en los que he tenido el placer de
               trabajar. Cada proyecto representa un desafío único y una
               oportunidad de aprendizaje, cada uno con su propio conjunto de
               desafíos y soluciones innovadoras.
             </p>
-            <p>
+            <p style={{ fontFamily: "cursive" }}>
               Estos proyectos son testimonio de mi crecimiento y evolución como
               profesional en el campo de la tecnología de la información. Cada
               uno de ellos ha contribuido a moldear mi comprensión y habilidades

@@ -78,8 +78,7 @@ function ResponsiveAppBar() {
               sx={{
                 mr: 2,
                 display: { xs: "none", md: "flex" },
-                fontFamily: "monospace",
-                fontWeight: 700,
+                fontFamily: "fantasy",
                 letterSpacing: ".3rem",
                 color: "white",
                 textDecoration: "none",
@@ -126,8 +125,7 @@ function ResponsiveAppBar() {
                   ml: 2,
                   display: { xs: "flex", md: "none" },
                   flexGrow: 1,
-                  fontFamily: "monospace",
-                  fontWeight: 700,
+                  fontFamily: "fantasy",
                   letterSpacing: ".2rem",
                   color: "white",
                   textDecoration: "none",
@@ -151,6 +149,7 @@ function ResponsiveAppBar() {
                       flexGrow: 1,
                       display: "flex",
                       justifyContent: "center",
+                      fontFamily: "fantasy",
                     }}
                   >
                     <Button
@@ -162,6 +161,7 @@ function ResponsiveAppBar() {
                         display: "flex",
                         justifyContent: "center",
                         backgroundColor: "gray",
+                        fontFamily: "fantasy",
                       }}
                       className={styles.viewMore}
                     >
@@ -209,7 +209,7 @@ function ResponsiveAppBar() {
                 <Button
                   key={page}
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "white", display: "flex" }}
+                  sx={{ my: 2, color: "white", display: "flex", fontSize: 16 }}
                   className={styles.buttonsNav}
                 >
                   {page}
