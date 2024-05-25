@@ -2,7 +2,7 @@ import advl from "../../assets/images/miLogo.png";
 import LocationCityIcon from "@mui/icons-material/LocationCity";
 import Email from "@mui/icons-material/Email";
 import ComputerIcon from "@mui/icons-material/Computer";
-import PhoneAndroid  from "@mui/icons-material/PhoneAndroid";
+import PhoneAndroid from "@mui/icons-material/PhoneAndroid";
 import styles from "./footer.module.css";
 import Tooltip from "@mui/material/Tooltip";
 import { IconButton } from "@mui/material";
@@ -23,18 +23,18 @@ export default function Footer() {
         </div>
         <div className={styles.info}>
           <div className={styles.address}>
-            <p>
+            <p style={{ fontFamily: "cursive", fontWeight: 100 }}>
               <LocationCityIcon /> Cartago, Valle del Cauca - Colombia.
             </p>
           </div>
           <div className={styles.contact}>
-            <p>
+            <p style={{ fontFamily: "cursive", fontWeight: 100 }}>
               <Email /> escarlata.2003@gmail.com
             </p>
-            <p>
+            <p style={{ fontFamily: "cursive", fontWeight: 100 }}>
               <PhoneAndroid /> +57 3015985993
             </p>
-            <p>
+            <p style={{ fontFamily: "cursive", fontWeight: 100 }}>
               <ComputerIcon /> Desarrollado por Angel Villa{" "}
             </p>
           </div>
@@ -42,7 +42,10 @@ export default function Footer() {
             {/* <ButtonGitHub /> */}
             <Tooltip
               title="GitHub"
-              style={{ backgroundColor: darkMode ? "#4078c0" : "#969696d3", color: "white" }}
+              style={{
+                backgroundColor: darkMode ? "#4078c0" : "#969696d3",
+                color: "white",
+              }}
               arrow
               placement="bottom"
             >
@@ -89,7 +92,7 @@ export default function Footer() {
         </div>
         <div className={styles.copyright}>
           <hr style={{ borderBottom: "2px solid #333" }} />
-          <p>
+          <p style={{ fontFamily: "cursive", fontWeight: 100 }}>
             &copy; {new Date().getFullYear()} Todos los derechos reservados.
           </p>
         </div>

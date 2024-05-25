@@ -78,7 +78,7 @@ function ResponsiveAppBar() {
               sx={{
                 mr: 2,
                 display: { xs: "none", md: "flex" },
-                fontFamily: "fantasy",
+                //fontFamily: "fantasy",
                 letterSpacing: ".3rem",
                 color: "white",
                 textDecoration: "none",
@@ -149,7 +149,7 @@ function ResponsiveAppBar() {
                       flexGrow: 1,
                       display: "flex",
                       justifyContent: "center",
-                      fontFamily: "fantasy",
+                      //fontFamily: "fantasy",
                     }}
                   >
                     <Button

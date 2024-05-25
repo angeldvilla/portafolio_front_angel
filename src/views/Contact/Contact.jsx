@@ -76,7 +76,11 @@ const Contact = () => {
       >
         <Typography
           variant="h4"
-          style={{ marginBottom: "30px", marginTop: "-0.5em" }}
+          style={{
+            marginBottom: "30px",
+            marginTop: "-0.5em",
+            fontFamily: "cursive",
+          }}
         >
           ¡Contáctame, deja tu mensaje!
         </Typography>
@@ -88,7 +92,10 @@ const Contact = () => {
               label="Nombre Completo"
               InputLabelProps={{
                 shrink: true,
-                style: { color: darkMode ? " #ffffff" : "#000" },
+                style: {
+                  color: darkMode ? " #ffffff" : "#000",
+                  fontFamily: "cursive",
+                },
               }}
               value={form.name}
               onChange={handleChange}
@@ -112,7 +119,10 @@ const Contact = () => {
               label="Correo Electrónico"
               InputLabelProps={{
                 shrink: true,
-                style: { color: darkMode ? " #ffffff" : "#000" },
+                style: {
+                  color: darkMode ? " #ffffff" : "#000",
+                  fontFamily: "cursive",
+                },
               }}
               value={form.email}
               onChange={handleChange}
@@ -137,7 +147,10 @@ const Contact = () => {
               label="Mensaje"
               InputLabelProps={{
                 shrink: true,
-                style: { color: darkMode ? " #ffffff" : "#000" },
+                style: {
+                  color: darkMode ? " #ffffff" : "#000",
+                  fontFamily: "cursive",
+                },
               }}
               value={form.message}
               onChange={handleChange}
@@ -149,6 +162,7 @@ const Contact = () => {
                 bgcolor: darkMode ? "#a1a0a0" : "",
                 color: darkMode ? "#fff" : "#fff",
                 borderRadius: 2,
+                fontFamily: "cursive",
               }}
             />
             {errors.message && (
@@ -160,6 +174,7 @@ const Contact = () => {
           <div>
             <button
               type="submit"
+              style={{ fontFamily: "cursive", fontWeight: 100 }}
               className={`${
                 darkMode ? styles.submitButtonDark : styles.submitButton
               }`}

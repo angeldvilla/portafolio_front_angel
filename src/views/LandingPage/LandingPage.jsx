@@ -7,6 +7,7 @@ import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import PinDropIcon from "@mui/icons-material/PinDrop";
 import miFoto from "../../assets/images/yo.jpg";
 import style from "../../components/Buttons/buttons.module.css";
+import landingStyles from "./landingpage.module.css";
 import { UseTheme } from "../../theme/ThemeContext";
 /* import CV from "../../assets/PDF/CV Resume - Angel David Villa - Frontend Developer Jr -2023.pdf"; */
 
@@ -42,10 +43,11 @@ const LandingPage = () => {
             style={{
               display: "flex",
               alignItems: "center",
-              justifyContent: "center",
               color: darkMode ? "#ffff" : "#883434",
-              fontSize: 40,
+              justifyContent: "center",
+              fontSize: 41,
             }}
+            className={landingStyles.landingTitle}
           >
             BIENVENIDOS A MI PORTAFOLIO WEB{" "}
             <BusinessCenterIcon sx={{ fontSize: 50, marginLeft: "5px" }} />
@@ -53,8 +55,9 @@ const LandingPage = () => {
           <h3
             style={{
               color: darkMode ? "#ffff" : "#883434",
-              fontFamily: "fantasy"
+              fontFamily: "fantasy",
             }}
+            className={landingStyles.landingTitle}
           >
             MI NOMBRE ES ANGEL DAVID VILLA
           </h3>
@@ -65,13 +68,20 @@ const LandingPage = () => {
               height: "auto",
               borderRadius: "50%",
             }}
+            className={landingStyles.landingPhoto}
             alt="Mi Logo"
           />
         </Atropos>
-        <p style={{ textAlign: "center", fontSize: 17.5, fontFamily: "cursive" }}>
+        <p
+          style={{ textAlign: "center", fontSize: 17.5, fontFamily: "cursive" }}
+          className={landingStyles.landingSlide}
+        >
           Soy un desarrollador Front-End y Full-Stack con 1 año de experiencia
         </p>
-        <p style={{ textAlign: "center", fontSize: 17.5, fontFamily: "cursive" }}>
+        <p
+          style={{ textAlign: "center", fontSize: 17.5, fontFamily: "cursive" }}
+          className={landingStyles.landingSlide}
+        >
           en Javascript, React, Redux, Node, Express, PostgreSQL y mySQL .
         </p>
         <p
@@ -80,8 +90,9 @@ const LandingPage = () => {
             alignItems: "center",
             justifyContent: "center",
             fontFamily: "cursive",
-            fontSize: 17.5
+            fontSize: 17.5,
           }}
+          className={landingStyles.landingSlide}
         >
           Actualmente vivo en Cartago, Valle - Colombia.{" "}
           <PinDropIcon sx={{ marginLeft: "10px" }} />
@@ -94,6 +105,7 @@ const LandingPage = () => {
             marginTop: "3em",
             marginBottom: "10em",
           }}
+          className={landingStyles.lanidngButtons}
         >
           <Link to="sobre mi" smooth={true} duration={800}>
             <Button
@@ -110,6 +122,7 @@ const LandingPage = () => {
                 alignItems: "center",
                 justifyContent: "center",
                 textAlign: "center",
+                fontFamily: "cursive",
               }}
             >
               Conóceme más <AssignmentIndIcon sx={{ marginLeft: "10px" }} />
@@ -128,7 +141,9 @@ const LandingPage = () => {
               alignItems: "center",
               justifyContent: "center",
               textAlign: "center",
+              fontFamily: "cursive",
             }}
+            className={landingStyles.lanidngButtons}
             onClick={handleDownloadCV}
           >
             Descarga mi CV <DownloadIcon sx={{ marginLeft: "8px" }} />
