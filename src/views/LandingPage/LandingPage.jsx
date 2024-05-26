@@ -92,7 +92,7 @@ const LandingPage = () => {
             fontFamily: "cursive",
             fontSize: 17.5,
           }}
-          className={landingStyles.landingSlide}
+          className={landingStyles.landingSlide3}
         >
           Actualmente vivo en Cartago, Valle - Colombia.{" "}
           <PinDropIcon sx={{ marginLeft: "10px" }} />
@@ -143,7 +143,6 @@ const LandingPage = () => {
               textAlign: "center",
               fontFamily: "cursive",
             }}
-            className={landingStyles.lanidngButtons}
             onClick={handleDownloadCV}
           >
             Descarga mi CV <DownloadIcon sx={{ marginLeft: "8px" }} />

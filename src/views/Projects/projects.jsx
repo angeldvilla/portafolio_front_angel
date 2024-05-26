@@ -9,7 +9,7 @@ const Projects = () => {
       <div className={styles.titlesContainer}>
         <div className={styles.textColumn}>
           <div className={styles.sectionHeader}>
-            <h1>MIS PROYECTOS</h1>
+            <h1 className={styles.titleProject}>MIS PROYECTOS</h1>
           </div>
           <div className={styles.textContent}>
             <p style={{ fontFamily: "cursive" }}>

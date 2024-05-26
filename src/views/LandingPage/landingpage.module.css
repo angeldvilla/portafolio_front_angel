@@ -40,48 +40,49 @@
 }
 
 .landingSlide {
-  animation: tracking-in-contract 0.7s linear both;
+  animation: tracking-in-expand-forward-top 0.4s linear both;
 }
-@keyframes tracking-in-contract {
+@keyframes tracking-in-expand-forward-top {
   0% {
-    letter-spacing: 0.6em;
+    letter-spacing: -0.2em;
+    transform: translateZ(-700px) translateY(-100px);
     opacity: 0;
   }
   40% {
     opacity: 0.6;
   }
   100% {
-    letter-spacing: normal;
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+.landingSlide3 {
+  animation: tracking-in-expand-forward-bottom 0.4s linear both;
+}
+@keyframes tracking-in-expand-forward-bottom {
+  0% {
+    letter-spacing: -0.2em;
+    transform: translateZ(-700px) translateY(100px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
     opacity: 1;
   }
 }
 
 .lanidngButtons {
-  animation: shake-left-right 0.8s linear both;
+  animation: rotate-vertical-center 0.8s;
 }
-@keyframes shake-left-right {
-  0%,
+@keyframes rotate-vertical-center {
+  0% {
+    transform: rotateY(0);
+  }
   100% {
-    transform: rotate(0deg);
-    transform-origin: 50% 50%;
-  }
-  10% {
-    transform: rotate(8deg);
-  }
-  20%,
-  40%,
-  60% {
-    transform: rotate(-10deg);
-  }
-  30%,
-  50%,
-  70% {
-    transform: rotate(10deg);
-  }
-  80% {
-    transform: rotate(-8deg);
-  }
-  90% {
-    transform: rotate(8deg);
+    transform: rotateY(360deg);
   }
 }
