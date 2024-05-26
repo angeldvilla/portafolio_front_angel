@@ -7,6 +7,7 @@ import WorkIcon from "@mui/icons-material/Work";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import defaultImage from "../../assets/images/defaultImage.jpg";
 import { UseTheme } from "../../theme/ThemeContext";
+import cardStyle from "./cards.module.css";
 
 export default function Cards(projects) {
   const { darkMode } = UseTheme();
@@ -70,6 +71,7 @@ export default function Cards(projects) {
           size="small"
           style={{ ...buttonStyle, backgroundColor: "#00366d" }}
           onClick={handleLink}
+          className={cardStyle.buttonHover}
         >
           Ver Proyecto <PlayCircleIcon sx={{ marginLeft: "5px" }} />
         </button>
@@ -77,6 +79,7 @@ export default function Cards(projects) {
           size="small"
           style={{ ...buttonStyle, backgroundColor: "#920101" }}
           onClick={handleView}
+          className={cardStyle.buttonHover}
         >
           Ver Repositorio <WorkIcon sx={{ marginLeft: "5px" }} />
         </button>
