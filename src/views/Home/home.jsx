@@ -24,22 +24,22 @@ const Home = () => {
       <div className={style.homeContainer}>
         <AnimatedBackground />
         <NavBar />
-        <section id="inicio" className={style.landingPageContainer}>
+        <section id="inicio" className={style.landingPageContainer} data-aos="fade-down">
           <LandingPage />
         </section>
       </div>
       <SocialButtons />
 
-      <section id="sobre mi">
+      <section id="sobre mi" data-aos="fade-right">
         {/* <Projects /> */}
         <AboutMe />
       </section>
-      <section id="proyectos">
+      <section id="proyectos" data-aos="fade-left">
         <Projects />
       </section>
       <div className={style.homeContainer}>
         <AnimatedBackground />
-        <section id="contacto" className={style.landingPageContainer}>
+        <section id="contacto" className={style.landingPageContainer} data-aos="fade-up">
           <Contact />
         </section>
       </div>
