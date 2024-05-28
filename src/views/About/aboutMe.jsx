@@ -13,10 +13,10 @@ const AboutMe = () => {
     >
       <div className={styles.titlesContainer}>
         <div className={styles.textColumn}>
-          <div className={styles.sectionHeader}>
+          <div className={styles.sectionHeader} data-aos="fade-right">
             <h1>MIS HABILIDADES</h1>
           </div>
-          <div className={styles.textContent}>
+          <div className={styles.textContent} data-aos="fade-left">
             <p style={{ fontFamily: "cursive" }}>
               Soy un joven apasionado por el mundo TI, tengo un fuerte deseo de
               aprender y crecer en este campo continuamente.
@@ -43,8 +43,8 @@ const AboutMe = () => {
           </div>
         </div>
 
-        <div className={styles.imageColumn}>
-          <div className={styles.sectionHeader}>
+        <div className={styles.imageColumn} data-aos="fade-down">
+          <div className={styles.sectionHeader} >
             <h1>FRONT-END</h1>
           </div>
           <SliderComponent />

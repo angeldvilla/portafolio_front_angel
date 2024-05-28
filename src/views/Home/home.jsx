@@ -30,7 +30,7 @@ const Home = () => {
       </div>
       <SocialButtons />
 
-      <section id="sobre mi" data-aos="fade-right">
+      <section id="sobre mi">
         {/* <Projects /> */}
         <AboutMe />
       </section>

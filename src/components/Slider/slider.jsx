@@ -46,7 +46,7 @@ const SliderComponent = () => {
   };
 
   return (
-    <div className={styles.sliderContainer}>
+    <div className={styles.sliderContainer} data-aos="fade-left">
       <Slider {...settings}>
         {technologies.map((technology, index) => (
           <div key={index}>
