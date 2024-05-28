@@ -8,10 +8,10 @@ const Projects = () => {
     <div className={`${darkMode ? styles.projectsContainerDark : styles.projectsContainer}`}>
       <div className={styles.titlesContainer}>
         <div className={styles.textColumn}>
-          <div className={styles.sectionHeader}>
+          <div className={styles.sectionHeader} data-aos="zoom-in-up">
             <h1 className={styles.titleProject}>MIS PROYECTOS</h1>
           </div>
-          <div className={styles.textContent}>
+          <div className={styles.textContent} data-aos="zoom-in-left">
             <p style={{ fontFamily: "cursive" }}>
               Explora algunos de los proyectos en los que he tenido el placer de
               trabajar. Cada proyecto representa un desafío único y una
@@ -28,7 +28,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className={styles.imageColumn}>
+        <div className={styles.imageColumn} data-aos="zoom-in-right">
           <CarrouselProjects />
         </div>
       </div>

@@ -62,7 +62,7 @@ function ResponsiveAppBar() {
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <a href="/">
+          <a href="/" data-aos="zoom-in-up">
             <Avatar
               alt="Logo Avatar"
               className="animate-jump animate-ease-linear"
@@ -83,6 +83,7 @@ function ResponsiveAppBar() {
                 color: "white",
                 textDecoration: "none",
               }}
+              data-aos="fade-up-right"
             >
               ANGEL DAVID VILLA
             </Typography>
@@ -151,6 +152,7 @@ function ResponsiveAppBar() {
                       justifyContent: "center",
                       //fontFamily: "fantasy",
                     }}
+                    data-aos="zoom-in-down"
                   >
                     <Button
                       key={page}
@@ -196,6 +198,7 @@ function ResponsiveAppBar() {
               display: { xs: "none", md: "flex" },
               justifyContent: "end",
             }}
+            data-aos="zoom-in-down"
           >
             {pages.map((page) => (
               <Link
@@ -218,7 +221,7 @@ function ResponsiveAppBar() {
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0, marginLeft: "10px" }} onClick={toggleDarkMode}>
+          <Box sx={{ flexGrow: 0, marginLeft: "10px" }} onClick={toggleDarkMode} data-aos="zoom-in-down">
             <DarkMode />
           </Box>
         </Toolbar>

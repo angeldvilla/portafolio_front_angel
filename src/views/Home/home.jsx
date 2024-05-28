@@ -24,7 +24,7 @@ const Home = () => {
       <div className={style.homeContainer}>
         <AnimatedBackground />
         <NavBar />
-        <section id="inicio" className={style.landingPageContainer} data-aos="fade-down">
+        <section id="inicio" className={style.landingPageContainer}>
           <LandingPage />
         </section>
       </div>
@@ -39,7 +39,13 @@ const Home = () => {
       </section>
       <div className={style.homeContainer}>
         <AnimatedBackground />
-        <section id="contacto" className={style.landingPageContainer} data-aos="fade-up">
+        <section
+          id="contacto"
+          className={style.landingPageContainer}
+          data-aos="zoom-in"
+          data-aos-easing="linear"
+          data-aos-duration="2000"
+        >
           <Contact />
         </section>
       </div>

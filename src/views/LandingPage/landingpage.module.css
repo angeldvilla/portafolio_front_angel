@@ -40,7 +40,7 @@
 }
 
 .landingSlide {
-  animation: tracking-in-expand-forward-top 0.4s linear both;
+  animation: tracking-in-expand-forward-top 0.7s linear both;
 }
 @keyframes tracking-in-expand-forward-top {
   0% {
@@ -58,7 +58,7 @@
 }
 
 .landingSlide3 {
-  animation: tracking-in-expand-forward-bottom 0.4s linear both;
+  animation: tracking-in-expand-forward-bottom 0.7s linear both;
 }
 @keyframes tracking-in-expand-forward-bottom {
   0% {

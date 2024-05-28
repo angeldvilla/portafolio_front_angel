@@ -45,7 +45,7 @@ const LandingPage = () => {
               alignItems: "center",
               color: darkMode ? "#ffff" : "#883434",
               justifyContent: "center",
-              fontSize: 41,
+              fontSize: 40,
             }}
             className={landingStyles.landingTitle}
           >
@@ -70,6 +70,7 @@ const LandingPage = () => {
             }}
             className={landingStyles.landingPhoto}
             alt="Mi Logo"
+            data-aos="zoom-in-down"
           />
         </Atropos>
         <p
@@ -105,7 +106,8 @@ const LandingPage = () => {
             marginTop: "3em",
             marginBottom: "10em",
           }}
-          className={landingStyles.lanidngButtons}
+          data-aos="flip-up"
+          data-aos-duration="2000"
         >
           <Link to="sobre mi" smooth={true} duration={800}>
             <Button
