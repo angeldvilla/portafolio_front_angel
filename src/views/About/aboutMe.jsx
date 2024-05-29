@@ -6,11 +6,7 @@ import styles from "./aboutMe.module.css";
 const AboutMe = () => {
   const { darkMode } = UseTheme();
   return (
-    <div
-      className={`${
-        darkMode ? styles.aboutMeContainerDark : styles.aboutMeContainer
-      }`}
-    >
+    <div className={`${darkMode ? styles.aboutMeContainerDark : styles.aboutMeContainer}`}>
       <div className={styles.titlesContainer}>
         <div className={styles.textColumn}>
           <div className={styles.sectionHeader} data-aos="fade-right">
@@ -44,7 +40,7 @@ const AboutMe = () => {
         </div>
 
         <div className={styles.imageColumn} data-aos="fade-down">
-          <div className={styles.sectionHeader} >
+          <div className={styles.sectionHeader}>
             <h1>FRONT-END</h1>
           </div>
           <SliderComponent />

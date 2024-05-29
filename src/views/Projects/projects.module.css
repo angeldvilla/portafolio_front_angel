@@ -1,10 +1,13 @@
-/* projects.module.css */
 .projectsContainer {
   background-color: rgb(241, 228, 227);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.projectsContainerDark {
+  /*background-color: #333;*/
 }
 
 .titlesContainer {
@@ -50,6 +53,7 @@
 .titleProject {
   animation: tracking-in-expand-forward-top 0.4s linear both;
 }
+
 @keyframes tracking-in-expand-forward-top {
   0% {
     letter-spacing: -0.2em;
@@ -62,5 +66,19 @@
   100% {
     transform: translateZ(0) translateY(0);
     opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .titlesContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textColumn,
+  .imageColumn {
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
   }
 }

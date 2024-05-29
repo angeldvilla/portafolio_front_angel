@@ -55,9 +55,15 @@ function ResponsiveAppBar() {
     <AppBar
       position="fixed"
       style={{
-        backgroundColor: isScrolled ? darkMode ? "#2b2b2bf4" : "#837777f4" :  darkMode ? "#9e241ccf" : "rgb(241, 145, 134)",
+        backgroundColor: isScrolled
+          ? darkMode
+            ? "#2b2b2bf4"
+            : "#837777f4"
+          : darkMode
+          ? "#9e241ccf"
+          : "rgb(241, 145, 134)",
         transition: "background-color 0.3s",
-        color : darkMode ? "#0a0a0a" : "#fffff",
+        color: darkMode ? "#0a0a0a" : "#fffff",
       }}
     >
       <Container maxWidth="xl">
@@ -96,6 +102,7 @@ function ResponsiveAppBar() {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
+              style={{ color: "white" }}
             >
               <MenuIcon />
             </IconButton>
@@ -172,6 +179,15 @@ function ResponsiveAppBar() {
                   </MenuItem>
                 </Link>
               ))}
+              <MenuItem
+                onClick={() => {
+                  toggleDarkMode();
+                  handleCloseNavMenu();
+                }}
+                sx={{ justifyContent: "center" }}
+              >
+                <DarkMode />
+              </MenuItem>
             </Menu>
           </Box>
           {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
@@ -221,7 +237,15 @@ function ResponsiveAppBar() {
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0, marginLeft: "10px" }} onClick={toggleDarkMode} data-aos="zoom-in-down">
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex" },
+              alignItems: "center",
+              ml: 2,
+            }}
+            onClick={toggleDarkMode}
+            data-aos="zoom-in-down"
+          >
             <DarkMode />
           </Box>
         </Toolbar>
