@@ -61,7 +61,7 @@ function ResponsiveAppBar() {
             : "#837777f4"
           : darkMode
           ? "#9e241ccf"
-          : "rgb(241, 145, 134)",
+          : "rgb(243, 184, 180)",
         transition: "background-color 0.3s",
         color: darkMode ? "#0a0a0a" : "#fffff",
       }}

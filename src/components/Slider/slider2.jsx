@@ -49,7 +49,7 @@ const SliderBack = () => {
               src={technology}
               alt={technologies[index]}
               style={{
-                width: "45%",
+                width: "35%",
                 height: "auto",
                 borderRadius: "8px",
                 boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",

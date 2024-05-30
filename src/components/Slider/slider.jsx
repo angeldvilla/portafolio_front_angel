@@ -54,6 +54,12 @@ const SliderComponent = () => {
               src={technology}
               alt={technologies[index]}
               className={styles.sliderImage}
+              style={{
+                width: "50%",
+                height: "auto",
+                borderRadius: "8px",
+                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+              }}
             />
           </div>
         ))}
