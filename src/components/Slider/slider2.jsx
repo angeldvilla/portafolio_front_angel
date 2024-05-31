@@ -3,16 +3,19 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "./slider.module.css";
 import nodejsImage from "../../assets/images/nodo.png";
+import phpImage from "../../assets/images/PHP.png";
 import expressImage from "../../assets/images/exp.png";
 import expressDark from "../../assets/images/Expressjs.png";
 import mysqlImage from "../../assets/images/msql.png";
 import postgreImage from "../../assets/images/postsql.png";
 import { UseTheme } from "../../theme/ThemeContext";
+import { Tooltip } from "@mui/material";
 
 const SliderBack = () => {
   const { darkMode } = UseTheme();
   const technologies = [
     nodejsImage,
+    phpImage,
     darkMode ? expressDark : expressImage,
     mysqlImage,
     postgreImage,
@@ -22,7 +25,7 @@ const SliderBack = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     responsive: [
       {
@@ -45,16 +48,32 @@ const SliderBack = () => {
       <Slider {...settings}>
         {technologies.map((technology, index) => (
           <div key={index}>
-            <img
-              src={technology}
-              alt={technologies[index]}
-              style={{
-                width: "35%",
-                height: "auto",
-                borderRadius: "8px",
-                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-              }}
-            />
+            <Tooltip
+              title={
+                technologies[0]
+                  ? "NodeJs"
+                  : technologies[1]
+                  ? "PHP"
+                  : technologies[2]
+                  ? "Express"
+                  : technologies[3]
+                  ? "MySQL"
+                  : technologies[4]
+                  ? "PostgreSQL"
+                  : technologies[index]
+              }
+            >
+              <img
+                src={technology}
+                alt={technologies[index]}
+                style={{
+                  width: "35%",
+                  height: "auto",
+                  borderRadius: "8px",
+                  boxShadow: "0 4px 8px rgba(243, 175, 175, 0.1)",
+                }}
+              />
+            </Tooltip>
           </div>
         ))}
       </Slider>

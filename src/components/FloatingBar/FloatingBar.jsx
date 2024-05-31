@@ -6,6 +6,7 @@ import {
   ButtonLinkedIn,
 } from "../Buttons/buttons";
 import { UseTheme } from "../../theme/ThemeContext";
+import style from "./floatingbar.module.css";
 
 const SocialButtons = () => {
   const { darkMode } = UseTheme();
@@ -33,19 +34,11 @@ const SocialButtons = () => {
 
   return (
     <div
+      className={`${style.socialButtonsContainer} ${
+        isAtBottom ? style.atBottom : ""
+      }`}
       style={{
-        position: "absolute",
-        zIndex: 1,
-        top: "50%",
-        transform: "translateY(-50%)",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        gap: "10px",
-        padding: "18px",
         backgroundColor: darkMode ? "#2b2b2bf4" : "#ecd9d9",
-        transition: "background-color 0.3s ease-in-out",
-        borderRadius: "8px",
       }}
     >
       <ButtonEmail />

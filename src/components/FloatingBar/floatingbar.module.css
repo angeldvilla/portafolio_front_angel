@@ -1,0 +1,37 @@
+.socialButtonsContainer {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 18px;
+  transition: background-color 0.3s ease-in-out, bottom 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.atBottom {
+  position: absolute;
+  bottom: 20px;
+  top: auto;
+  transform: translateY(0);
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .socialButtonsContainer {
+    flex-direction: row;
+    bottom: 100px;
+    top: auto;
+    transform: translateY(0);
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .socialButtonsContainer > *:not(:last-child) {
+    margin-right: 10px;
+  }
+}

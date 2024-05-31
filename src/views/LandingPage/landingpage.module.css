@@ -1,6 +1,74 @@
+.landingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+}
+
+.landingContent {
+  text-align: center;
+  margin-top: 5em;
+}
+
 .landingTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   animation: scale-up-top 0.4s;
 }
+
+.landingSubtitle {
+  margin-top: 1em;
+  animation: scale-up-horizontal-center 0.8s;
+}
+
+.landingPhoto {
+  width: 175px;
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+  height: auto;
+  border-radius: 50%;
+  animation: rotate-scale-down 0.9s linear both;
+}
+
+.landingText {
+  font-size: 17.5px;
+  margin-top: 1em;
+  font-family: cursive;
+  animation: tracking-in-expand-forward-top 0.7s linear both;
+}
+
+.landingLocation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: cursive;
+  font-size: 17.5px;
+  margin-top: 1em;
+  animation: tracking-in-expand-forward-bottom 0.7s linear both;
+}
+
+.landingButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 10em;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .landingButtons {
+    flex-direction: column;
+  }
+
+  .landingButtons > *:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+/* Keyframes for animations */
 @keyframes scale-up-top {
   0% {
     transform: scale(0.5);
@@ -12,9 +80,6 @@
   }
 }
 
-.landingSubtitle {
-  animation: scale-up-horizontal-center 0.8s;
-}
 @keyframes scale-up-horizontal-center {
   0% {
     transform: scaleX(0.2);
@@ -24,9 +89,6 @@
   }
 }
 
-.landingPhoto {
-  animation: rotate-scale-down 0.9s linear both;
-}
 @keyframes rotate-scale-down {
   0% {
     transform: scale(1) rotateZ(0);
@@ -39,9 +101,6 @@
   }
 }
 
-.landingSlide {
-  animation: tracking-in-expand-forward-top 0.7s linear both;
-}
 @keyframes tracking-in-expand-forward-top {
   0% {
     letter-spacing: -0.2em;
@@ -57,9 +116,6 @@
   }
 }
 
-.landingSlide3 {
-  animation: tracking-in-expand-forward-bottom 0.7s linear both;
-}
 @keyframes tracking-in-expand-forward-bottom {
   0% {
     letter-spacing: -0.2em;
@@ -75,9 +131,6 @@
   }
 }
 
-.lanidngButtons {
-  animation: rotate-vertical-center 0.8s;
-}
 @keyframes rotate-vertical-center {
   0% {
     transform: rotateY(0);

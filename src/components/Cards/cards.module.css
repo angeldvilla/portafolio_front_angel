@@ -1,4 +1,4 @@
 .buttonHover:hover {
     transition: 0.8s;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }

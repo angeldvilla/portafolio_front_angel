@@ -14,16 +14,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 12px;
 }
 
 .textColumn,
 .imageColumn {
-  width: 48%;
+  width: 45%;
   margin-bottom: 20px;
-  margin-top: 6.5em;
+  margin-top: 4em;
   margin-bottom: 5.5em;
 }
 

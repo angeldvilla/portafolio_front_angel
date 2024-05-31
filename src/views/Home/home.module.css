@@ -1,11 +1,42 @@
-.homeContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+.appContainer {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Home container with flex properties */
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Specific container for landing page */
 .landingPageContainer {
   position: relative;
   z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Adjustments for the other sections to avoid overflow */
+section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow-x: hidden;
+  z-index: 1;
 }

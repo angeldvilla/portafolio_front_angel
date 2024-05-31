@@ -20,25 +20,23 @@ const Home = () => {
   }, [dispatch]);
 
   return (
-    <div>
+    <div className={style.appContainer}>
       <div className={style.homeContainer}>
         <AnimatedBackground />
         <NavBar />
+      <SocialButtons />
         <section id="inicio" className={style.landingPageContainer}>
           <LandingPage />
         </section>
       </div>
-      <SocialButtons />
-
-      <section id="sobre mi">
-        {/* <Projects /> */}
-        <AboutMe />
-      </section>
-      <section id="proyectos" data-aos="fade-left">
-        <Projects />
-      </section>
       <div className={style.homeContainer}>
         <AnimatedBackground />
+        <section id="sobre mi">
+          <AboutMe />
+        </section>
+        <section id="proyectos" data-aos="fade-left">
+          <Projects />
+        </section>
         <section
           id="contacto"
           className={style.landingPageContainer}

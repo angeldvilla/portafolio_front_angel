@@ -58,7 +58,7 @@ const SliderComponent = () => {
                 width: "50%",
                 height: "auto",
                 borderRadius: "8px",
-                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                boxShadow: "0 4px 8px rgba(243, 175, 175, 0.1)",
               }}
             />
           </div>
