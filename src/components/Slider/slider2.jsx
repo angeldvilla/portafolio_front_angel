@@ -14,11 +14,11 @@ import { Tooltip } from "@mui/material";
 const SliderBack = () => {
   const { darkMode } = UseTheme();
   const technologies = [
-    nodejsImage,
-    phpImage,
-    darkMode ? expressDark : expressImage,
-    mysqlImage,
-    postgreImage,
+    { image: nodejsImage, name: "NodeJS" },
+    { image: phpImage, name: "PHP" },
+    { image: darkMode ? expressDark : expressImage, name: "Express" },
+    { image: mysqlImage, name: "MySQL" },
+    { image: postgreImage, name: "PostgreSQL" },
   ];
 
   const settings = {
@@ -48,26 +48,12 @@ const SliderBack = () => {
       <Slider {...settings}>
         {technologies.map((technology, index) => (
           <div key={index}>
-            <Tooltip
-              title={
-                technologies[0]
-                  ? "NodeJs"
-                  : technologies[1]
-                  ? "PHP"
-                  : technologies[2]
-                  ? "Express"
-                  : technologies[3]
-                  ? "MySQL"
-                  : technologies[4]
-                  ? "PostgreSQL"
-                  : technologies[index]
-              }
-            >
+            <Tooltip title={technology?.name}>
               <img
-                src={technology}
+                src={technology?.image}
                 alt={technologies[index]}
                 style={{
-                  width: "35%",
+                  width: "50%",
                   height: "auto",
                   borderRadius: "8px",
                   boxShadow: "0 4px 8px rgba(243, 175, 175, 0.1)",

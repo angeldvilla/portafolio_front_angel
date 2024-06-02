@@ -10,17 +10,18 @@ import reduximage from "../../assets/images/rdx.png";
 import boostrapimage from "../../assets/images/btp.png";
 import tailwindimage from "../../assets/images/twl.png";
 import materialimage from "../../assets/images/mtui.png";
+import { Tooltip } from "@mui/material";
 
 const SliderComponent = () => {
   const technologies = [
-    htmlimage,
-    javscriptimage,
-    cssimage,
-    reactimage,
-    reduximage,
-    boostrapimage,
-    tailwindimage,
-    materialimage,
+    { image: htmlimage, name: "HTML5" },
+    { image: javscriptimage, name: "JavaScript" },
+    { image: cssimage, name: "CSS3" },
+    { image: reactimage, name: "ReactJS" },
+    { image: reduximage, name: "Redux" },
+    { image: boostrapimage, name: "Bootstrap" },
+    { image: tailwindimage, name: "TailwindCSS" },
+    { image: materialimage, name: "MaterialUI" },
   ];
 
   const settings = {
@@ -48,19 +49,21 @@ const SliderComponent = () => {
   return (
     <div className={styles.sliderContainer} data-aos="fade-left">
       <Slider {...settings}>
-        {technologies.map((technology, index) => (
+        {technologies?.map((technology, index) => (
           <div key={index}>
-            <img
-              src={technology}
-              alt={technologies[index]}
-              className={styles.sliderImage}
-              style={{
-                width: "50%",
-                height: "auto",
-                borderRadius: "8px",
-                boxShadow: "0 4px 8px rgba(243, 175, 175, 0.1)",
-              }}
-            />
+            <Tooltip title={technology?.name}>
+              <img
+                src={technology?.image}
+                alt={technologies[index]}
+                className={styles.sliderImage}
+                style={{
+                  width: "70%",
+                  height: "auto",
+                  borderRadius: "8px",
+                  boxShadow: "0 4px 8px rgba(243, 175, 175, 0.1)",
+                }}
+              />
+            </Tooltip>
           </div>
         ))}
       </Slider>
