@@ -53,7 +53,7 @@ const LandingPage = () => {
         <p
           className={landingStyles.landingText}
         >
-          en Javascript, React, Redux, Node, Express, PostgreSQL y mySQL .
+          en HTML5, CSS3, Javascript, React, Redux, Bootstrap, TailwindCSS, MaterialUI, Node, Express, PostgreSQL y MySQL.
         </p>
         <p
           className={landingStyles.landingLocation}
