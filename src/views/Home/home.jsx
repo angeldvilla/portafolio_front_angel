@@ -10,6 +10,7 @@ import SocialButtons from "../../components/FloatingBar/FloatingBar";
 import Footer from "../../components/Footer/Footer";
 import AnimatedBackground from "../AnimatedBackground/Animatedbackground";
 import style from "./home.module.css";
+import Certificates from "../Certificates/Certificates";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -36,6 +37,9 @@ const Home = () => {
         </section>
         <section id="proyectos" data-aos="fade-left">
           <Projects />
+        </section>
+        <section id="proyectos" data-aos="fade-left">
+          <Certificates />
         </section>
         <section
           id="contacto"

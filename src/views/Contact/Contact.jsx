@@ -68,7 +68,7 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <div className={styles.contactContainerWrapper}>
       <div
         className={`${
           darkMode ? styles.contactContainerDark : styles.contactContainer
