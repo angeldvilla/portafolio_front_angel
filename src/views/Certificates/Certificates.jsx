@@ -7,13 +7,15 @@ const Certificates = () => {
   return (
     <div
       className={`${
-        darkMode ? styles.projectsContainerDark : styles.projectsContainer
+        darkMode
+          ? styles.certificatesContainerDark
+          : styles.certificatesContainer
       }`}
     >
       <div className={styles.titlesContainer}>
         <div className={styles.textColumn}>
           <div className={styles.sectionHeader} data-aos="zoom-in-up">
-            <h1>CERTIFICADOS</h1>
+            <h2 className={styles.titleCertificated}>CERTIFICADOS</h2>
           </div>
           <div className={styles.textContent} data-aos="zoom-in-down">
             <CarrouselCertificates />
