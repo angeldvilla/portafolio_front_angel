@@ -19,7 +19,6 @@ export const ButtonEmail = () => {
       style={{
         backgroundColor: "#e8b11ac0",
         color: "white",
-        /* background: "linear-gradient(90deg, #1a73e8c0, #ff0000a0, #f0d8009d, #2f940090b7)" */
       }}
       arrow
       placement="right"
