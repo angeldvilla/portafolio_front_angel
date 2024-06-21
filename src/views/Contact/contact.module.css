@@ -67,7 +67,6 @@
 .submitButton {
   background-color: #1f1f1ff4;
   color: white;
-  font-family: "fantasy", sans-serif;
 }
 
 .submitButton:hover {
@@ -79,7 +78,8 @@
 .submitButtonDark {
   background-color: #8b0606f4;
   color: white;
-  font-family: "fantasy", sans-serif;
+  font-weight: bold;
+  font-size: medium;
 }
 
 .submitButtonDark:hover {

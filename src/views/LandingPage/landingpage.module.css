@@ -35,7 +35,6 @@
 .landingText {
   font-size: 17.5px;
   margin-top: 1em;
-  font-family: cursive;
   animation: tracking-in-expand-forward-top 0.7s linear both;
 }
 
@@ -43,7 +42,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: cursive;
   font-size: 17.5px;
   margin-top: 1em;
   animation: tracking-in-expand-forward-bottom 0.7s linear both;
