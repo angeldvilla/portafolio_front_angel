@@ -56,7 +56,6 @@ export default function DarkMode() {
     <FormGroup>
       <FormControlLabel
         control={<MaterialUISwitch sx={{ m: 1 }} />}
-        /* checked= {false} */
       />
     </FormGroup>
   );
