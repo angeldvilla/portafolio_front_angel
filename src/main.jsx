@@ -32,15 +32,3 @@ const MainComponent = () => {
 };
 
 ReactDOM.createRoot(document.getElementById("root")).render(<MainComponent />);
-
-/* ReactDOM.createRoot(document.getElementById("root")).render(
-  <ThemeProvider>
-    <React.StrictMode>
-      <BrowserRouter>
-        <Provider store={store}>
-          <App />
-        </Provider>
-      </BrowserRouter>
-    </React.StrictMode>
-  </ThemeProvider>
-); */
