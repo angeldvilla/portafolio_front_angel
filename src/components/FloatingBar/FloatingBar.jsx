@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
+import { UseTheme } from "../../theme/ThemeContext";
 import {
   ButtonEmail,
   ButtonGitHub,
   ButtonInstagram,
   ButtonLinkedIn,
 } from "../Buttons/buttons";
-import { UseTheme } from "../../theme/ThemeContext";
 import style from "./floatingbar.module.css";
 
 const SocialButtons = () => {
