@@ -38,8 +38,8 @@ export default function Cards(projects) {
         <Typography
           component="div"
           style={{
-            fontFamily: "fantasy",
             fontSize: "25px",
+            fontFamily: "Montserrat",
             marginBottom: "15px",
           }}
         >
@@ -49,7 +49,6 @@ export default function Cards(projects) {
           variant="body2"
           color="text.secondary"
           style={{
-            fontFamily: "cursive",
             fontSize: "14px",
             overflow: "hidden",
             textOverflow: "ellipsis",
