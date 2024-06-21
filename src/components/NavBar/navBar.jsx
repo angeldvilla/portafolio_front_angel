@@ -84,7 +84,6 @@ function ResponsiveAppBar() {
               sx={{
                 mr: 2,
                 display: { xs: "none", md: "flex" },
-                //fontFamily: "fantasy",
                 letterSpacing: ".3rem",
                 color: "white",
                 textDecoration: "none",
@@ -157,7 +156,6 @@ function ResponsiveAppBar() {
                       flexGrow: 1,
                       display: "flex",
                       justifyContent: "center",
-                      //fontFamily: "fantasy",
                     }}
                     data-aos="zoom-in-down"
                   >
@@ -170,7 +168,6 @@ function ResponsiveAppBar() {
                         display: "flex",
                         justifyContent: "center",
                         backgroundColor: "gray",
-                        fontFamily: "fantasy",
                       }}
                       className={styles.viewMore}
                     >
