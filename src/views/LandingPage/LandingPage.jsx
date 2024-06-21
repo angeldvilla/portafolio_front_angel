@@ -33,7 +33,6 @@ const LandingPage = () => {
         <h3
           style={{
             color: darkMode ? "#ffff" : "#883434",
-            fontFamily: "fantasy",
           }}
           className={landingStyles.landingSubtitle}
         >
@@ -82,7 +81,6 @@ const LandingPage = () => {
                 alignItems: "center",
                 justifyContent: "center",
                 textAlign: "center",
-                fontFamily: "cursive",
               }}
             >
               Conóceme más <AssignmentIndIcon sx={{ marginLeft: "10px" }} />
@@ -91,7 +89,7 @@ const LandingPage = () => {
           <Button
             className={style.downloadCV}
             style={{
-              backgroundColor: "#001E3C",
+              backgroundColor: "#144372",
               color: "white",
               borderRadius: "8px",
               padding: "10px 20px",
@@ -101,7 +99,6 @@ const LandingPage = () => {
               alignItems: "center",
               justifyContent: "center",
               textAlign: "center",
-              fontFamily: "cursive",
             }}
             onClick={handleDownloadCV}
           >
