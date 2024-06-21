@@ -75,11 +75,11 @@ const Contact = () => {
         }`}
       >
         <Typography
-          variant="h4"
+          variant="h3"
           style={{
             marginBottom: "30px",
             marginTop: "-0.5em",
-            fontFamily: "cursive",
+            fontFamily: "Montserrat",
           }}
         >
           ¡Contáctame, deja tu mensaje!
@@ -94,7 +94,6 @@ const Contact = () => {
                 shrink: true,
                 style: {
                   color: darkMode ? " #ffffff" : "#000",
-                  fontFamily: "cursive",
                 },
               }}
               value={form.name}
@@ -121,7 +120,6 @@ const Contact = () => {
                 shrink: true,
                 style: {
                   color: darkMode ? " #ffffff" : "#000",
-                  fontFamily: "cursive",
                 },
               }}
               value={form.email}
@@ -149,7 +147,6 @@ const Contact = () => {
                 shrink: true,
                 style: {
                   color: darkMode ? " #ffffff" : "#000",
-                  fontFamily: "cursive",
                 },
               }}
               value={form.message}
@@ -162,7 +159,6 @@ const Contact = () => {
                 bgcolor: darkMode ? "#a1a0a0" : "",
                 color: darkMode ? "#fff" : "#fff",
                 borderRadius: 2,
-                fontFamily: "cursive",
               }}
             />
             {errors.message && (
@@ -174,20 +170,13 @@ const Contact = () => {
           <div>
             <button
               type="submit"
-              style={{ fontFamily: "cursive", fontWeight: 100 }}
+              style={{ fontWeight: 100 }}
               className={`${
                 darkMode ? styles.submitButtonDark : styles.submitButton
               }`}
             >
               ENVIAR
             </button>
-            {/* <button
-              type="button"
-              onClick={handleReset}
-              className={styles.resetButton}
-            >
-              REINICIAR
-            </button> */}
           </div>
           <Toaster position="top-right" richColors />
         </form>
