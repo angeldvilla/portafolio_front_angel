@@ -23,18 +23,18 @@ export default function Footer() {
         </div>
         <div className={styles.info}>
           <div className={styles.address}>
-            <p style={{ fontFamily: "cursive", fontWeight: 100 }}>
+            <p style={{ fontWeight: 100 }}>
               <LocationCityIcon /> Cartago, Valle del Cauca - Colombia.
             </p>
           </div>
           <div className={styles.contact}>
-            <p style={{ fontFamily: "cursive", fontWeight: 100 }}>
+            <p style={{ fontWeight: 100 }}>
               <Email /> escarlata.2003@gmail.com
             </p>
-            <p style={{ fontFamily: "cursive", fontWeight: 100 }}>
+            <p style={{ fontWeight: 100 }}>
               <PhoneAndroid /> +57 3015985993
             </p>
-            <p style={{ fontFamily: "cursive", fontWeight: 100 }}>
+            <p style={{ fontWeight: 100 }}>
               <ComputerIcon /> Desarrollado por Angel Villa{" "}
             </p>
           </div>
