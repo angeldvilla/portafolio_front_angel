@@ -92,7 +92,7 @@ export default function Footer() {
         </div>
         <div className={styles.copyright}>
           <hr style={{ borderBottom: "2px solid #333" }} />
-          <p style={{ fontFamily: "cursive", fontWeight: 100 }}>
+          <p style={{ fontStyle: "italic", fontWeight: 100 }}>
             &copy; {new Date().getFullYear()} Todos los derechos reservados.
           </p>
         </div>
