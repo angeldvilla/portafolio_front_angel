@@ -83,7 +83,7 @@ const LandingPage = () => {
                 textAlign: "center",
               }}
             >
-              Conóceme más <AssignmentIndIcon sx={{ marginLeft: "10px" }} />
+              Ver más <AssignmentIndIcon sx={{ marginLeft: "10px" }} />
             </Button>
           </Link>
           <Button
@@ -102,7 +102,7 @@ const LandingPage = () => {
             }}
             onClick={handleDownloadCV}
           >
-            Descarga mi CV <DownloadIcon sx={{ marginLeft: "8px" }} />
+            CV <DownloadIcon sx={{ marginLeft: "8px" }} />
           </Button>
         </div>
       </div>
