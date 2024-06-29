@@ -15,7 +15,7 @@ const Certificates = () => {
       <div className={styles.titlesContainer}>
         <div className={styles.textColumn}>
           <div className={styles.sectionHeader} data-aos="zoom-in-up">
-            <h1 className={styles.titleCertificated}>CERTIFICADOS</h1>
+            <h1>CERTIFICADOS</h1>
           </div>
           <div className={styles.textContent} data-aos="zoom-in-down">
             <CarrouselCertificates />
