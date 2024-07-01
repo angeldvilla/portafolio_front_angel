@@ -30,7 +30,7 @@ export default function Cards(projects) {
     >
       <CardMedia
         component="img"
-        height="295"
+        height="300"
         image={!projects.projects.image ? defaultImage : projects.projects.image}
         title={projects.projects.title}
       />
