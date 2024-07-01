@@ -44,7 +44,7 @@ const SliderBack = () => {
   };
 
   return (
-    <div className={styles.sliderContainer} data-aos="fade-right">
+    <div className={styles.sliderContainerB} data-aos="fade-right">
       <Slider {...settings}>
         {technologies.map((technology, index) => (
           <div key={index}>
@@ -53,7 +53,7 @@ const SliderBack = () => {
                 src={technology?.image}
                 alt={technologies[index]}
                 style={{
-                  width: "50%",
+                  width: "80%",
                   height: "auto",
                   borderRadius: "8px",
                   boxShadow: "0 4px 8px rgba(243, 175, 175, 0.1)",
