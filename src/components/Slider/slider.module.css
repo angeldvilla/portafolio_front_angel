@@ -1,6 +1,6 @@
 /* slider.module.css */
 
-.sliderContainer {
+.sliderContainerF {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -9,8 +9,17 @@
   padding: 20px;
 }
 
+.sliderContainerB {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .sliderImage {
-  width: 80%;
+  width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
