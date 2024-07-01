@@ -47,7 +47,7 @@ const SliderComponent = () => {
   };
 
   return (
-    <div className={styles.sliderContainer} data-aos="fade-left">
+    <div className={styles.sliderContainerF} data-aos="fade-left">
       <Slider {...settings}>
         {technologies?.map((technology, index) => (
           <div key={index}>
@@ -57,7 +57,7 @@ const SliderComponent = () => {
                 alt={technologies[index]}
                 className={styles.sliderImage}
                 style={{
-                  width: "70%",
+                  width: "100%",
                   height: "auto",
                   borderRadius: "8px",
                   boxShadow: "0 4px 8px rgba(243, 175, 175, 0.1)",
