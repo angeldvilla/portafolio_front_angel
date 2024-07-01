@@ -24,6 +24,9 @@ const LandingPage = () => {
           style={{
             color: darkMode ? "#ffff" : "#883434",
             fontSize: 40,
+            justifyContent: "center",
+            textAlign: "center",
+            alignItems: "center",
           }}
           className={landingStyles.landingTitle}
         >
@@ -44,19 +47,14 @@ const LandingPage = () => {
           alt="Mi Logo"
           data-aos="zoom-in-down"
         />
-        <p
-          className={landingStyles.landingText}
-        >
+        <p className={landingStyles.landingText}>
           Soy un desarrollador Front-End y Full-Stack con 1 año de experiencia
         </p>
-        <p
-          className={landingStyles.landingText}
-        >
-          en HTML5, CSS3, Javascript, React, Redux, Bootstrap, TailwindCSS, MaterialUI, Node, Express, PostgreSQL y MySQL.
+        <p className={landingStyles.landingText}>
+          en HTML5, CSS3, Javascript, React, Redux, Bootstrap, TailwindCSS,
+          MaterialUI, Node, Express, PostgreSQL y MySQL.
         </p>
-        <p
-          className={landingStyles.landingLocation}
-        >
+        <p className={landingStyles.landingLocation}>
           Actualmente vivo en Cartago, Valle - Colombia.{" "}
           <PinDropIcon sx={{ marginLeft: "10px" }} />
         </p>
