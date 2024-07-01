@@ -16,7 +16,7 @@ const CarrouselProjects = () => {
         stopOnHover={true}
         showIndicators={false}
         transitionTime={2000}
-        interval={8000}
+        interval={7000}
       >
         {projects &&
           projects.map((project) => (
